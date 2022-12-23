@@ -12,6 +12,11 @@
     --navbar-color-hover: white;
     --navbar-height-large: 80px;
     --navbar-height-small: 60px;
+    --navbar-hover-1: #5eddac;
+    --navbar-hover-2: #5a43f1;
+    --navbar-hover-3: #f6cd5d;
+    --navbar-hover-4: #59abf7;
+
     /*  */
     --card-background-color: var(--gray-9);
     --star: var(--rainbow-5);
@@ -105,16 +110,11 @@
     --blue-3: #5b5ed5;
     --blue-4: #623ac6;
     --blue-5: #58119f;
-    --rainbow-1: #ff67f7;
     --rainbow-2: #936df9;
-    --rainbow-3: #59abf7;
-    --rainbow-4: #5eddac;
-    --rainbow-5: #f6cd5d;
     --orange: #ff7e22;
     --yellow: #fca62a;
     --pink: #f57ad0;
     --purple: #673ece;
-    --indigo: #5a43f1;
     --indigo-dark: #4509cf;
     --indigo-light: #969bf6;
     --indigo-muted: #f1f2fd;
