@@ -1,17 +1,27 @@
 <template>
-  <div class="home">
-    <nav-bar />
+  <div>
+    <navbar-component/>
+    <home-component/>
   </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import NavBar from "@/components/NavBar.vue";
-
+import HomeComponent from '@/components/HomeComponent.vue';
+import NavbarComponent from '@/components/NavbarComponent.vue';
 export default {
-  name: "HomeView",
-  components: {
-    NavBar,
+  components: {HomeComponent, NavbarComponent},
+  props: {},
+  data() {
+    return {};
   },
+  created() {},
+  methods: {},
+  mounted() {},
 };
 </script>
+<style lang='css' scoped>
+.navigation nav  a:active {
+    color:var(--navbar-color-hover);
+    border-bottom: 2px solid var(--navbar-hover-4);
+
+}
+</style>
