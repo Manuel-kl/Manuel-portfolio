@@ -5,7 +5,6 @@
 </template>
 <script>
 export default {
-    name:ConctactComponent,
     components: {},
     props: {},
     data() {

@@ -1,6 +1,6 @@
 <template>
-  <nav id="app"></nav>
-  <router-view/>
+    <nav id="app"></nav>
+    <router-view />
 </template>
 
 <style>
@@ -16,17 +16,23 @@
     --navbar-hover-2: #5a43f1;
     --navbar-hover-3: #f6cd5d;
     --navbar-hover-4: #59abf7;
+    --font-color-heading: white;
+    --font-color-base: #e6e6e6;
+    --font-color-muted: #999;
+    --border-color: #2c2c2c;
+    --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    --font-family-monospace: Menlo, "IBM Plex Mono", Menlo, monospace;
+
+
+
+
 
     /*  */
     --card-background-color: var(--gray-9);
     --star: var(--rainbow-5);
     --year: var(--rainbow-4);
-    --font-color-heading: white;
     --font-color-heading3: white;
-    --font-color-base: var(--gray-2);
-    --font-color-muted: var(--gray-5);
     --font-color-bright: white;
-    --border-color: var(--gray-7);
     --border-color-hover: var(--gray-6);
     --button-background-color: var(--gray-8);
     --post-time-color: var(--rainbow-4);
@@ -71,6 +77,7 @@
     --error: #b0292c;
     --code-link-hover: var(--link-hover-color);
     --highlight-code-color: rgb(116, 207, 136, 0.1);
+
 }
 
 * {
@@ -118,12 +125,8 @@
     --indigo-dark: #4509cf;
     --indigo-light: #969bf6;
     --indigo-muted: #f1f2fd;
-    --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    --font-family-monospace: Menlo, "IBM Plex Mono", Menlo, monospace;
     --font-family-heading: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    --font-color-base: var(--gray-7);
-    --font-color-muted: var(--gray-6);
-    --font-color-heading: var(--gray-8);
+    /* --font-color-base: var(--gray-7); */
     --font-color-heading3: var(--gray-7);
     --font-color-bright: var(--gray-9);
     --font-color-hero-heading: var(--gray-0);
