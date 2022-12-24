@@ -23,19 +23,19 @@
     --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
     --font-family-monospace: Menlo, "IBM Plex Mono", Menlo, monospace;
     --font-family-homepage:InterVariable,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --star: #f6cd5d;
+    --card-background-color: #1f1f1f;
+    --button-background-color: #252525;
 
 
 
 
 
     /*  */
-    --card-background-color: var(--gray-9);
-    --star: var(--rainbow-5);
     --year: var(--rainbow-4);
     --font-color-heading3: white;
     --font-color-bright: white;
     --border-color-hover: var(--gray-6);
-    --button-background-color: var(--gray-8);
     --post-time-color: var(--rainbow-4);
     --card-time-color: var(--pink);
     --project-time-color: var(--star);
@@ -131,16 +131,15 @@
     --font-color-heading3: var(--gray-7);
     --font-color-bright: var(--gray-9);
     --font-color-hero-heading: var(--gray-0);
-    --border-color: var(--gray-3);
+    /* --border-color: var(--gray-3); */
     --border-color-hover: var(--gray-6);
     --border-radius: 6px;
-    --card-background-color: var(--gray-0);
-    --button-background-color: var(--gray-05);
+    /* --card-background-color: var(--gray-0); */
+    /* --button-background-color: var(--gray-05); */
     --marker: var(--pink);
     --link: var(--indigo);
     --link-hover-color: var(--indigo-muted);
     --year: var(--green);
-    --star: var(--yellow);
     --post-time-color: var(--gray-6);
     --card-time-color: var(--gray-5);
     --project-time-color: var(--font-color-muted);
