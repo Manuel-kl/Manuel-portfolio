@@ -39,7 +39,7 @@ export default {
     padding: 20px 100px 20px 100px;
     height: var(--navbar-height-large);
     font-family: var(--font-family-nav);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
 }
 

@@ -23,86 +23,120 @@
             </div>
 
         </section>
-        <section class="blogs">
-            <div class="blog">
+        <section class="blog-lists">
+            <div class="blog-list">
                 <div>
                     <img src="../assets/logo.png" alt="Vue Js logo">
                 </div>
                 <div>
                     <p>December 24, 2022</p>
-                    <a href="#" onclick="event.preventDefault()"> <h2> Understanding Vue</h2></a>
+                    <a href="#" onclick="event.preventDefault()">
+                        <h2> Understanding Vue</h2>
+                    </a>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog-list">
                 <div>
                     <img src="../assets/logo.png" alt="Vue Js logo">
                 </div>
                 <div>
                     <p>December 24, 2022</p>
-                    <a href="#" onclick="event.preventDefault()"> <h2> Understanding Vue</h2></a>
+                    <a href="#" onclick="event.preventDefault()">
+                        <h2> Understanding Vue</h2>
+                    </a>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog-list">
                 <div>
                     <img src="../assets/logo.png" alt="Vue Js logo">
                 </div>
                 <div>
                     <p>December 24, 2022</p>
-                    <a href="#" onclick="event.preventDefault()"> <h2> Understanding Vue</h2></a>
+                    <a href="#" onclick="event.preventDefault()">
+                        <h2> Understanding Vue</h2>
+                    </a>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog-list">
                 <div>
                     <img src="../assets/logo.png" alt="Vue Js logo">
                 </div>
                 <div>
                     <p>December 24, 2022</p>
-                    <a href="#" onclick="event.preventDefault()"> <h2> Understanding Vue</h2></a>
+                    <a href="#" onclick="event.preventDefault()">
+                        <h2> Understanding Vue</h2>
+                    </a>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog-list">
                 <div>
                     <img src="../assets/logo.png" alt="Vue Js logo">
                 </div>
                 <div>
                     <p>December 24, 2022</p>
-                    <a href="#" onclick="event.preventDefault()"> <h2> Understanding Vue</h2></a>
+                    <a href="#" onclick="event.preventDefault()">
+                        <h2> Understanding Vue</h2>
+                    </a>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog-list">
                 <div>
                     <img src="../assets/logo.png" alt="Vue Js logo">
                 </div>
                 <div>
                     <p>December 24, 2022</p>
-                    <a href="#" onclick="event.preventDefault()"> <h2> Understanding Vue</h2></a>
+                    <a href="#" onclick="event.preventDefault()">
+                        <h2> Understanding Vue</h2>
+                    </a>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog-list">
                 <div>
                     <img src="../assets/logo.png" alt="Vue Js logo">
                 </div>
                 <div>
                     <p>December 24, 2022</p>
-                    <a href="#" onclick="event.preventDefault()"> <h2> Understanding Vue</h2></a>
+                    <a href="#" onclick="event.preventDefault()">
+                        <h2> Understanding Vue</h2>
+                    </a>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog-list">
                 <div>
                     <img src="../assets/logo.png" alt="Vue Js logo">
                 </div>
                 <div>
                     <p>December 24, 2022</p>
-                    <a href="#" onclick="event.preventDefault()"> <h2> Understanding Vue</h2></a>
+                    <a href="#" onclick="event.preventDefault()">
+                        <h2> Understanding Vue</h2>
+                    </a>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog-list">
                 <div>
                     <img src="../assets/logo.png" alt="Vue Js logo">
                 </div>
                 <div>
                     <p>December 24, 2022</p>
-                    <a href="#" onclick="event.preventDefault()"> <h2> Understanding Vue</h2></a>
+                    <a href="#" onclick="event.preventDefault()">
+                        <h2> Understanding Vue</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="projects-lists">
+            <div class="projects">
+                <div>
+                    <time>2022</time>
+                    <a href="#" onclick="event.preventDefault()">
+                        <p>345 <span>&#9734;</span> </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" onclick="event.preventDefault()">
+                        <h2>Todo and Note Taking Web App</h2>
+                        <p>A Web App to streamline your todo list and note taking</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -121,64 +155,77 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-#home-page{
+#home-page {
     background-color: var(--background-color);
+    font-family: var(--font-family-homepage);
+
 
 }
-.description{
+
+.description {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-column-gap: 50px;
     flex-direction: row;
     justify-content: space-between;
-    margin:0 100px ;
+    margin: 0 100px;
+
 }
-.description .intro{
+
+.description .intro {
     max-width: 560px;
 
 
 }
-.description h1{
+
+.description h1 {
     font-size: 3rem;
     color: var(--font-color-heading);
 }
-.description p{
+
+.description p {
     font-size: 1.2rem;
-    color:var(--font-color-base);
+    color: var(--font-color-base);
 }
-.description em{
-    font-style:italic ;
+
+.description em {
+    font-style: italic;
     color: var(--font-color-muted);
 }
-.blogs{
+
+.blog-lists {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 100px;
     gap: 1rem;
     padding-top: 50px;
 }
-.blog img{
+
+.blog-list img {
     width: 35px;
     padding: 0 10px;
 }
-.blog{
+
+.blog-list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border:1px solid var(--font-color-muted) ;
+    border: 1px solid var(--font-color-muted);
     padding: 1rem;
     gap: 1rem;
     border-radius: 5px;
     max-width: 320px;
 
 }
-.blog p{
+
+.blog-list p {
     color: var(--border-color);
     font-size: 0.8rem;
     letter-spacing: -.01rem;
     font-family: var(--font-family-monospace);
 }
-.blog h2{
+
+.blog-list h2 {
     font-size: 1.2rem;
     font-family: var(--font-family-base);
     line-height: 1.3rem;
@@ -187,11 +234,13 @@ export default {
     border-bottom: 1px solid var(--background-color);
 
 }
-.blog a{
+
+.blog-list a {
     text-decoration: none;
     color: var(--font-color-heading);
 }
-.blog h2:hover{
+
+.blog-list h2:hover {
     border-bottom: 1px solid var(--font-color-heading);
     padding-bottom: 2px;
 }

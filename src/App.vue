@@ -22,6 +22,7 @@
     --border-color: #2c2c2c;
     --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
     --font-family-monospace: Menlo, "IBM Plex Mono", Menlo, monospace;
+    --font-family-homepage:InterVariable,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 
 
 
