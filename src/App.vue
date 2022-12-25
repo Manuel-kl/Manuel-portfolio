@@ -1,5 +1,5 @@
-<template>
-    <nav id="app"></nav>
+<template id="app">
+    <nav ></nav>
     <router-view />
 </template>
 
@@ -84,6 +84,11 @@
 * {
     padding: 0;
     margin: 0;
+
+}
+#app{
+
+
 }
 
 :root {

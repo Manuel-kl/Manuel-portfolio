@@ -4,12 +4,12 @@
       <h3>Langat Emmanuel <span>|</span> Have a good {{ dayOfWeek }}!</h3>
     </div>
     <div class="contact-links">
-      <a href="#" onclick="event.preventDefault()">Github</a>
-      <a href="#" onclick="event.preventDefault()">LinkedIn</a>
-      <a href="#" onclick="event.preventDefault()">Twitter</a>
-      <a href="#" onclick="event.preventDefault()">WhatsApp</a>
-      <a href="#" onclick="event.preventDefault()">Instagram</a>
-      <a href="#" onclick="event.preventDefault()">Email</a>
+      <a href="https://github.com/Manuel-kl" target="_blank"><font-awesome-icon icon="fa-brands fa-github" class="fa-icon"/></a>
+      <a href="https://linkedin.com/in/elangat" target="_blank"><font-awesome-icon icon="fa-brands fa-linkedin" class="fa-icon"/></a>
+      <a href="https://twitter.com/Manuelkl_" target="_blank"><font-awesome-icon icon="fa-brands fa-twitter" class="fa-icon"/></a>
+      <a href="https://wa.me/+254743520021/?text=Hello%20Emmanuel..." target="_blank"><font-awesome-icon icon="fa-brands fa-whatsapp" class="fa-icon"/></a>
+      <a href="https://www.instagram.com/manuel_k_l_/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" class="fa-icon"/></a>
+      <a href="mailto:mannuehkipkirui@gmail.com" target="_blank"><font-awesome-icon icon="fa-regular fa-envelope" class="fa-icon"/></a>
     </div>
   </div>
 </template>
@@ -42,25 +42,32 @@ export default {
   color: var(--font-color-base);
 }
 .footer .greetings h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-family: var(--font-family-base);
   font-weight: 600;
 }
 .footer .greetings span {
   color: var(--font-color-muted);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 100;
 }
 
 .footer a {
   text-decoration: none;
   color: var(--font-color-base);
-  padding-right: 1.3rem;
-  font-family: var(--font-family-base);
-  font-size: 1rem;
+  margin-right: .4rem;
 }
-.footer a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
+.footer .fa-icon {
+  font-size: 1.3rem;
+padding: 15px;
+
+
 }
+.footer .fa-icon:hover {
+background-color: var(--button-background-color);
+padding:15px;
+transition: all .7s ease-in-out;
+border-radius: 50%;
+}
+
 </style>
