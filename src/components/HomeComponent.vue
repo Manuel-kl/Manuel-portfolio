@@ -34,106 +34,8 @@
         <button>View all</button></a
       >
     </section>
-    <section class="blog-lists">
-      <div class="blog-list">
-        <div>
-          <img src="../assets/logo.png" alt="Vue Js logo" />
-        </div>
-        <div>
-          <p>December 24, 2022</p>
-          <a href="#" onclick="event.preventDefault()">
-            <h2>Understanding Vue</h2>
-          </a>
-        </div>
-      </div>
-      <div class="blog-list">
-        <div>
-          <img src="../assets/logo.png" alt="Vue Js logo" />
-        </div>
-        <div>
-          <p>December 24, 2022</p>
-          <a href="#" onclick="event.preventDefault()">
-            <h2>Understanding Vue</h2>
-          </a>
-        </div>
-      </div>
-      <div class="blog-list">
-        <div>
-          <img src="../assets/logo.png" alt="Vue Js logo" />
-        </div>
-        <div>
-          <p>December 24, 2022</p>
-          <a href="#" onclick="event.preventDefault()">
-            <h2>Understanding Vue</h2>
-          </a>
-        </div>
-      </div>
-      <div class="blog-list">
-        <div>
-          <img src="../assets/logo.png" alt="Vue Js logo" />
-        </div>
-        <div>
-          <p>December 24, 2022</p>
-          <a href="#" onclick="event.preventDefault()">
-            <h2>Understanding Vue</h2>
-          </a>
-        </div>
-      </div>
-      <div class="blog-list">
-        <div>
-          <img src="../assets/logo.png" alt="Vue Js logo" />
-        </div>
-        <div>
-          <p>December 24, 2022</p>
-          <a href="#" onclick="event.preventDefault()">
-            <h2>Understanding Vue</h2>
-          </a>
-        </div>
-      </div>
-      <div class="blog-list">
-        <div>
-          <img src="../assets/logo.png" alt="Vue Js logo" />
-        </div>
-        <div>
-          <p>December 24, 2022</p>
-          <a href="#" onclick="event.preventDefault()">
-            <h2>Understanding Vue</h2>
-          </a>
-        </div>
-      </div>
-      <div class="blog-list">
-        <div>
-          <img src="../assets/logo.png" alt="Vue Js logo" />
-        </div>
-        <div>
-          <p>December 24, 2022</p>
-          <a href="#" onclick="event.preventDefault()">
-            <h2>Understanding Vue</h2>
-          </a>
-        </div>
-      </div>
-      <div class="blog-list">
-        <div>
-          <img src="../assets/logo.png" alt="Vue Js logo" />
-        </div>
-        <div>
-          <p>December 24, 2022</p>
-          <a href="#" onclick="event.preventDefault()">
-            <h2>Understanding Vue</h2>
-          </a>
-        </div>
-      </div>
-      <div class="blog-list">
-        <div>
-          <img src="../assets/logo.png" alt="Vue Js logo" />
-        </div>
-        <div>
-          <p>December 24, 2022</p>
-          <a href="#" onclick="event.preventDefault()">
-            <h2>Understanding Vue</h2>
-          </a>
-        </div>
-      </div>
+    <section>
+      <Blogs />
     </section>
     <section class="projects-blogs">
       <h2>Projects</h2>
@@ -141,136 +43,18 @@
         <button>View all</button></a
       >
     </section>
-    <section class="projects-lists">
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"><button>Demo <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Source <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a
-          >
-        </div>
-      </div>
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"><button>Demo <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Source <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a
-          >
-        </div>
-      </div>
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"><button>Demo <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Source <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a
-          >
-        </div>
-      </div>
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"><button>Demo <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Source <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a
-          >
-        </div>
-      </div>
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"><button>Demo <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Source <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a
-          >
-        </div>
-      </div>
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"><button>Demo <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Source <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="fa-link" /></button></a
-          >
-        </div>
-      </div>
-    </section>
+    <projects />
     <footer-component />
   </div>
 </template>
 <script>
 import FooterComponent from "./FooterComponent.vue";
+import Blogs from "./homepage-components/Blogs.vue";
+import Projects from './homepage-components/Projects.vue';
 export default {
-  components: { FooterComponent },
-  props: {},
+  components: { FooterComponent, Blogs, Projects },
+  props: {
+   },
   data() {
     return {};
   },
@@ -314,56 +98,6 @@ export default {
   color: var(--font-color-muted);
 }
 
-.blog-lists,
-.projects-lists {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0 100px;
-  gap: 1rem;
-  padding-bottom: 60px;
-}
-
-.blog-list img {
-  width: 35px;
-  padding: 0 10px;
-}
-
-.blog-list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid var(--font-color-muted);
-  padding: 1rem;
-  gap: 1rem;
-  border-radius: 5px;
-  /* max-width: 320px; */
-}
-
-.blog-list p {
-  color: var(--font-color-muted);
-  font-size: 0.8rem;
-  letter-spacing: -0.01rem;
-  font-family: var(--font-family-monospace);
-}
-
-.blog-list h2 {
-  font-size: 1.2rem;
-  font-family: var(--font-family-base);
-  line-height: 1.3rem;
-  padding: 2px 0;
-  margin: 0.3rem 0 0.5rem;
-  border-bottom: 1px solid var(--background-color);
-}
-
-.blog-list a {
-  text-decoration: none;
-  color: var(--font-color-heading);
-}
-
-.blog-list h2:hover {
-  border-bottom: 1px solid var(--font-color-heading);
-  padding-bottom: 2px;
-}
 .projects {
   display: flex;
   flex-direction: column;
@@ -382,51 +116,6 @@ export default {
   color: var(--star);
 }
 
-.projects h3 {
-  color: var(--font-color-heading);
-  font-size: 1.1rem;
-}
-.projects .pro-title h3:hover {
-  text-decoration: underline;
-  /* border-bottom: 1px solid var(--font-color-heading); */
-}
-.projects .pro-title a {
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-family: var(--font-family-base);
-
-}
-.projects .pro-title p {
-  padding: 10px 0;
-  color: var(--font-color-muted);
-  font-family: var(--font-family-base);
-  line-height: 1.5;
-  font-size: 0.9rem;
-}
-.projects .links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 5px;
-}
-.projects .links a {
-  text-decoration: none;
-
-}
-.projects .links a .fa-link{
-  padding-left: 5px;
-}
-.projects .links a button {
-  color: var(--font-color-base);
-  background-color: var(--button-background-color);
-  line-height: 1;
-  border: 1px solid var(--border-color);
-  padding: 0.5rem 0.6rem;
-  border-radius: 24px;
-  font-size: 0.8rem;
-  font-family: var(--font-family-base);
-  cursor: pointer;
-}
 .projects-blogs {
   display: flex;
   flex-direction: row;
@@ -454,7 +143,6 @@ export default {
   font-family: var(--font-family-base);
   cursor: pointer;
 }
-.projects .links a button:hover,
 .projects-blogs button:hover {
   border: 1px solid var(--font-color-muted);
 }

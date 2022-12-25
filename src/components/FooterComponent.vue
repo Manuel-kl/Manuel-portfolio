@@ -6,10 +6,10 @@
     <div class="contact-links">
       <a href="https://github.com/Manuel-kl" target="_blank"><font-awesome-icon icon="fa-brands fa-github" class="fa-icon"/></a>
       <a href="https://linkedin.com/in/elangat" target="_blank"><font-awesome-icon icon="fa-brands fa-linkedin" class="fa-icon"/></a>
+      <a href="mailto:mannuehkipkirui@gmail.com" target="_blank"><font-awesome-icon icon="fa-regular fa-envelope" class="fa-icon"/></a>
       <a href="https://twitter.com/Manuelkl_" target="_blank"><font-awesome-icon icon="fa-brands fa-twitter" class="fa-icon"/></a>
       <a href="https://wa.me/+254743520021/?text=Hello%20Emmanuel..." target="_blank"><font-awesome-icon icon="fa-brands fa-whatsapp" class="fa-icon"/></a>
       <a href="https://www.instagram.com/manuel_k_l_/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" class="fa-icon"/></a>
-      <a href="mailto:mannuehkipkirui@gmail.com" target="_blank"><font-awesome-icon icon="fa-regular fa-envelope" class="fa-icon"/></a>
     </div>
   </div>
 </template>
@@ -33,7 +33,7 @@ export default {
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 4rem;
+  padding: 2.5rem;
   gap: 1.25rem;
   align-items: center;
   border-top: 1px solid var(--border-color);

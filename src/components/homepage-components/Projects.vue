@@ -1,7 +1,5 @@
 <template>
-  <div id="pro">
-    <div class="pro-heading"><h2>Projects</h2></div>
-    <div class="projects-lists">
+  <div class="projects-lists">
       <div class="projects">
         <div class="star">
           <time>2022</time>
@@ -194,208 +192,11 @@
           ></a>
         </div>
       </div>
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Demo
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Source
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-        </div>
-      </div>
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Demo
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Source
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-        </div>
-      </div>
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Demo
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Source
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-        </div>
-      </div>
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Demo
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Source
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-        </div>
-      </div>
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Demo
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Source
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-        </div>
-      </div>
-      <div class="projects">
-        <div class="star">
-          <time>2022</time>
-        </div>
-        <div class="pro-title">
-          <a href="#" onclick="event.preventDefault()">
-            <h3>Todo and Note Taking Web App</h3>
-          </a>
-          <p>A Web App to streamline your todo list and note taking.</p>
-        </div>
-        <div class="links">
-          <a href="#" onclick="event.preventDefault()"
-            ><button>Article</button></a
-          >
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Demo
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-          <a href="#" onclick="event.preventDefault()"
-            ><button>
-              Source
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="fa-link"
-              /></button
-          ></a>
-        </div>
-      </div>
-    </div>
-    <footer-component />
   </div>
 </template>
-  <script>
-import FooterComponent from "./FooterComponent.vue";
+<script>
 export default {
-  components: {
-    FooterComponent,
-  },
+  components: {},
   props: {},
   data() {
     return {};
@@ -405,17 +206,7 @@ export default {
   mounted() {},
 };
 </script>
-  <style lang='css' scoped>
-#pro {
-  background-color: var(--background-color);
-}
-.pro-heading h2 {
-  font-size: 2.3rem;
-  margin: 0 100px;
-  font-family: var(--font-family-base);
-  color: var(--font-color-heading);
-  padding: 20px 0 ;
-}
+<style lang='css' scoped>
 .projects-lists {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -453,6 +244,7 @@ export default {
   text-decoration: none;
   font-size: 1.1rem;
   font-family: var(--font-family-base);
+
 }
 .projects .pro-title p {
   padding: 10px 0;
@@ -469,8 +261,9 @@ export default {
 }
 .projects .links a {
   text-decoration: none;
+
 }
-.projects .links a .fa-link {
+.projects .links a .fa-link{
   padding-left: 5px;
 }
 .projects .links a button {
@@ -484,7 +277,7 @@ export default {
   font-family: var(--font-family-base);
   cursor: pointer;
 }
-.projects .links a button:hover {
+.projects .links a button:hover{
   border: 1px solid var(--font-color-muted);
 }
 </style>
