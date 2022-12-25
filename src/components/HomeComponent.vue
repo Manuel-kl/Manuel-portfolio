@@ -133,9 +133,7 @@
       <div class="projects">
         <div class="star">
           <time>2022</time>
-          <a href="#" onclick="event.preventDefault()">
-            <p>345 <span>&#9734;</span></p>
-          </a>
+
         </div>
         <div class="pro-title">
           <a href="#" onclick="event.preventDefault()">
@@ -152,9 +150,7 @@
       <div class="projects">
         <div class="star">
           <time>2022</time>
-          <a href="#" onclick="event.preventDefault()">
-            <p>345 <span>&#9734;</span></p>
-          </a>
+
         </div>
         <div class="pro-title">
           <a href="#" onclick="event.preventDefault()">
@@ -171,9 +167,7 @@
       <div class="projects">
         <div class="star">
           <time>2022</time>
-          <a href="#" onclick="event.preventDefault()">
-            <p>345 <span>&#9734;</span></p>
-          </a>
+
         </div>
         <div class="pro-title">
           <a href="#" onclick="event.preventDefault()">
@@ -190,9 +184,7 @@
       <div class="projects">
         <div class="star">
           <time>2022</time>
-          <a href="#" onclick="event.preventDefault()">
-            <p>345 <span>&#9734;</span></p>
-          </a>
+
         </div>
         <div class="pro-title">
           <a href="#" onclick="event.preventDefault()">
@@ -209,9 +201,7 @@
       <div class="projects">
         <div class="star">
           <time>2022</time>
-          <a href="#" onclick="event.preventDefault()">
-            <p>345 <span>&#9734;</span></p>
-          </a>
+
         </div>
         <div class="pro-title">
           <a href="#" onclick="event.preventDefault()">
@@ -228,9 +218,7 @@
       <div class="projects">
         <div class="star">
           <time>2022</time>
-          <a href="#" onclick="event.preventDefault()">
-            <p>345 <span>&#9734;</span></p>
-          </a>
+
         </div>
         <div class="pro-title">
           <a href="#" onclick="event.preventDefault()">
@@ -245,11 +233,13 @@
         </div>
       </div>
     </section>
+    <footer-component/>
   </div>
 </template>
 <script>
+import FooterComponent from './FooterComponent.vue';
 export default {
-  components: {},
+  components: {FooterComponent},
   props: {},
   data() {
     return {};
@@ -319,7 +309,7 @@ export default {
 }
 
 .blog-list p {
-  color: var(--border-color);
+  color: var(--font-color-muted);
   font-size: 0.8rem;
   letter-spacing: -0.01rem;
   font-family: var(--font-family-monospace);
@@ -346,38 +336,26 @@ export default {
 .projects {
   display: flex;
   flex-direction: column;
-  color: white;
   background-color: var(--card-background-color);
   padding: 1.2rem;
+  margin-bottom: 35px;
+
 }
 
 .projects .star {
-  display: flex;
   font-family: var(--font-family-monospace);
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding: 2px;
+  padding-bottom: 7px;
 }
-.projects .star span {
-  color: var(--star);
-  font-size: 1.2rem;
-}
-.projects .star a {
-  text-decoration: none;
-  padding-bottom: 2px;
-  color: var(--font-color-muted);
-  border-bottom: 2px solid var(--card-background-color);
-}
+
+
 .projects .star time {
   color: var(--star);
 }
-.projects .star a:hover {
-  border-bottom: 2px solid var(--font-color-heading);
-  padding-bottom: 2px;
-}
+
 .projects h3 {
   color: var(--font-color-heading);
+  font-size: 1.1rem;
 }
 .projects .pro-title h3:hover {
     text-decoration: underline;
@@ -413,8 +391,11 @@ export default {
     border: 1px solid var(--border-color);
     padding: 0.75rem 1.2rem;
     border-radius: 24px;
-    font-size: 1.1rem;
-    font-family: var(--font-family-nav);
+    font-size: 1rem;
+    font-family: var(--font-family-base);
     cursor: pointer;
+}
+.projects .links a button:hover{
+  border: 1px solid var(--font-color-muted);
 }
 </style>
