@@ -1,57 +1,46 @@
 <template>
-  <div class="languages-tools">
+  <div class="container">
     <div class="skills-heading">
       <h4>My Skills</h4>
     </div>
-    <div class="languages">
-      <div>
-        <p>
-          <font-awesome-icon icon="fa-solid fa-link" /><img
-            src="../../assets/php_png.png"
-            alt="php logo"
-          />
-          PHP
-        </p>
-      </div>
-      <div>
-        <p>
-          <font-awesome-icon icon="fa-solid fa-link" /><img
-            src="../../assets/JavaScript_png.png"
-            alt="JavaScript logo"
-          />
-          JavaScript
-        </p>
-      </div>
-      <div>
-        <p>
-          <font-awesome-icon icon="fa-solid fa-link" /><font-awesome-icon
-            icon="fa-brands fa-html5"
-          />HTML5
-        </p>
-      </div>
-      <div>
-        <p>
-          <font-awesome-icon icon="fa-solid fa-link" /><img
-            src="../../assets/css_png.png"
-            alt="css logo"
-          />
-          CSS
-        </p>
-      </div>
-      <div>
-        <p>
-          <font-awesome-icon icon="fa-solid fa-link" />
-          <img src="../../assets/python_png.png" alt="python logo" /> Python
-        </p>
-      </div>
-      <div>
-        <p>
-          <font-awesome-icon icon="fa-solid fa-link" /><img
-            src="../../assets/sql_png.png"
-            alt="sql logo"
-          />
-          SQL
-        </p>
+    <div class="languages-container">
+      <div class="languages-head"><h6>Languages</h6></div>
+      <div class="languages-tools">
+        <div class="languages">
+          <div class="item">
+            <font-awesome-icon icon="fa-solid fa-link" class="link" />
+            <img src="../../assets/php_png.png" alt="php logo" />
+            <p>PHP</p>
+          </div>
+          <div class="item">
+            <font-awesome-icon icon="fa-solid fa-link" class="link" />
+            <img src="../../assets/JavaScript_png.png" alt="JavaScript logo" />
+            <p>JavaScript</p>
+          </div>
+          <div class="item">
+            <font-awesome-icon icon="fa-solid fa-link" class="link" />
+            <img src="../../assets/html_png.png" alt="HTML logo" />
+            <p>HTML5</p>
+          </div>
+          <div class="item">
+            <font-awesome-icon icon="fa-solid fa-link" class="link" />
+            <img src="../../assets/css_png.png" alt="css logo" />
+            <p>CSS</p>
+          </div>
+          <div class="item">
+            <font-awesome-icon icon="fa-solid fa-link" class="link" />
+            <img src="../../assets/python_png.png" alt="python logo" />
+            <p>Python</p>
+          </div>
+          <div class="item">
+            <font-awesome-icon icon="fa-solid fa-link" class="link" />
+            <img src="../../assets/sql_png.png" alt="sql logo" />
+            <p>SQL</p>
+          </div>
+        </div>
+        <div>
+          <img src="../../assets/web-dev.webp" alt="" class="dev" />
+        </div>
       </div>
     </div>
   </div>
@@ -69,23 +58,80 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-.languages-tools {
-  display: flex;
-  flex-direction: column;
+.container {
   margin: 0 100px;
+  border-top: 2px solid var(--card-background-color);
+}
+.languages-tools {
+  display: grid;
+  padding: 30px 0;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .skills-heading h4 {
   font-size: 2.3rem;
   font-family: var(--font-family-base);
   color: var(--font-color-heading);
-  padding: 30px 0 20px 0;
+  padding: 30px 0 5px 0;
+  max-width: fit-content;
+  border-bottom: 2px dotted var(--star);
 }
 .languages {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50vw;
+}
+.languages-head {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding-bottom: 30px;
+}
+.languages-head h6 {
+  color: var(--font-color-muted);
+  font-size: 2.3rem;
+  font-family: var(--font-family-base);
+  padding: 45px 0 0;
+  line-height: 0.7;
+  max-width: fit-content;
+  border-bottom: 1px dashed var(--font-color-muted);
+}
+
+.languages .item {
+  display: flex;
+  flex-basis: 45%;
+  text-align: center;
+  padding-bottom: 15px;
+  align-items: center;
+}
+.languages .item p {
+  color: var(--navbar-color);
+  line-height: 1.5rem;
+  font-family: var(--font-family-base);
+  font-size: 1.7rem;
+  margin: 0 15px;
+  border-bottom: 1px dotted var(--background-color);
+  padding: 15px 0;
 }
 .languages img {
-  width: 100px;
+  width: 50px;
+  max-height: 100px;
+}
+.languages .link {
+  color: var(--background-color);
+  padding-right: 10px;
+}
+.languages .item:hover .link {
+  color: var(--font-color-base);
+  padding-right: 10px;
+}
+.languages .item:hover p {
+  border-bottom: 1px dotted var(--star);
+  padding: 15px 0;
+}
+.dev {
+  max-width: 350px;
 }
 </style>

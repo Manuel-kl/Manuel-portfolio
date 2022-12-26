@@ -48,16 +48,44 @@
           >ALX Africa </a
         >Software Engineering programme.
       </p>
-      <div class="dot">__</div>
-      <div class="dot">__</div>
-      <div class="dot">__</div>
-      <div class="dot">__</div>
-      <div class="dot">__</div>
-      <div class="dot">__</div>
-      <div class="dot">__</div>
-      <div class="dot">__</div>
-      <div class="dot">__</div>
-      <div class="dot-t">__</div>
+      <div class="loading">
+        <div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot-t">__</div>
+        </div>
+        <div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot-t">__</div>
+        </div>
+        <div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot">__</div>
+          <div class="dot-t">__</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -80,6 +108,7 @@ export default {
   flex-direction: row;
   gap: 50px;
   margin: 0 100px;
+  padding-bottom: 20px;
 }
 .profile {
   display: flex;
@@ -126,7 +155,11 @@ export default {
   font-size: 1.2rem;
   padding: 15px 0;
 }
-
+.loading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .dot {
   width: 10px;
   height: 10px;

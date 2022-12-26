@@ -183,9 +183,9 @@ export default {
   data() {
     return {};
   },
-  created() {},
+  created() { },
   methods: {},
-  mounted() {},
+  mounted() { },
 };
 </script>
 <style lang='css' scoped>
@@ -209,6 +209,12 @@ export default {
   gap: 1rem;
   padding-bottom: 60px;
 }
+
+.blog-list:hover {
+  border: 1px solid var(--button-background-color);
+  box-shadow: 1px 1px 4px 1px var(--star);
+}
+
 
 .blog-list img {
   width: 35px;

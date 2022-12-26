@@ -10,14 +10,23 @@
     </div>
     <div class="skills">
       <skills-component />
+      <frameworks-component />
     </div>
+    <footer-component />
   </div>
 </template>
 <script>
+import FrameworksComponent from "./about-components/FrameworksComponent.vue";
 import ProfileComponent from "./about-components/ProfileComponent.vue";
 import SkillsComponent from "./about-components/SkillsComponent.vue";
+import FooterComponent from "./FooterComponent.vue";
 export default {
-  components: { ProfileComponent, SkillsComponent },
+  components: {
+    ProfileComponent,
+    SkillsComponent,
+    FrameworksComponent,
+    FooterComponent,
+  },
   props: {},
   data() {
     return {};
