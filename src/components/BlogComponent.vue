@@ -175,7 +175,7 @@
     </div>
   </div>
 </template>
-  <script>
+<script>
 import FooterComponent from "./FooterComponent.vue";
 export default {
   components: { FooterComponent },
@@ -188,17 +188,20 @@ export default {
   mounted() {},
 };
 </script>
-  <style lang='css' scoped>
+<style lang='css' scoped>
 .bl {
   background-color: var(--background-color);
 }
+
 .bl-heading h2 {
   font-size: 2.3rem;
-  margin: 0 100px;
+  margin: 0 100px 30px;
   font-family: var(--font-family-base);
   color: var(--font-color-heading);
+  border-bottom: 1px solid var(--font-color-heading);
   padding: 20px 0;
 }
+
 .blog-lists {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

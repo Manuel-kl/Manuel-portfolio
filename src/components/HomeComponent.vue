@@ -50,11 +50,10 @@
 <script>
 import FooterComponent from "./FooterComponent.vue";
 import Blogs from "./homepage-components/Blogs.vue";
-import Projects from './homepage-components/Projects.vue';
+import Projects from "./homepage-components/Projects.vue";
 export default {
   components: { FooterComponent, Blogs, Projects },
-  props: {
-   },
+  props: {},
   data() {
     return {};
   },
@@ -122,16 +121,19 @@ export default {
   margin: 30px 100px 20px 100px;
   justify-content: space-between;
 }
+
 .projects-blogs h2 {
   color: var(--font-color-heading);
   font-family: var(--font-family-base);
   border-bottom: 1px solid var(--background-color);
   padding-bottom: 3px;
 }
+
 .projects-blogs h2:hover {
   border-bottom: 1px solid var(--font-color-muted);
   padding-bottom: 3px;
 }
+
 .projects-blogs button {
   color: var(--font-color-base);
   background-color: var(--button-background-color);
@@ -143,6 +145,7 @@ export default {
   font-family: var(--font-family-base);
   cursor: pointer;
 }
+
 .projects-blogs button:hover {
   border: 1px solid var(--font-color-muted);
 }

@@ -411,10 +411,11 @@ export default {
 }
 .pro-heading h2 {
   font-size: 2.3rem;
-  margin: 0 100px;
+  margin: 0 100px 30px;
+  border-bottom: 1px solid var(--font-color-heading);
   font-family: var(--font-family-base);
   color: var(--font-color-heading);
-  padding: 20px 0 ;
+  padding: 20px 0;
 }
 .projects-lists {
   display: grid;

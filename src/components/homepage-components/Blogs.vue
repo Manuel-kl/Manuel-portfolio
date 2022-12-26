@@ -108,9 +108,9 @@ export default {
   data() {
     return {};
   },
-  created() {},
+  created() { },
   methods: {},
-  mounted() {},
+  mounted() { },
 };
 </script>
 <style lang='css' scoped>
