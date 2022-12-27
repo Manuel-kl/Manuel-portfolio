@@ -1,14 +1,14 @@
 <template>
   <div>
-    <navbar-component/>
-    <about-component/>
+    <navbar-component />
+    <about-component />
   </div>
 </template>
 <script>
-import AboutComponent from '@/components/AboutComponent.vue';
-import NavbarComponent from '@/components/NavbarComponent.vue';
+import AboutComponent from "@/components/AboutComponent.vue";
+import NavbarComponent from "@/components/NavbarComponent.vue";
 export default {
-  components: {AboutComponent, NavbarComponent},
+  components: { AboutComponent, NavbarComponent },
   props: {},
   data() {
     return {};

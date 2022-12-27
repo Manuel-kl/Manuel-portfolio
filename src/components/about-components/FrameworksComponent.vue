@@ -49,9 +49,9 @@ export default {
   data() {
     return {};
   },
-  created() { },
+  created() {},
   methods: {},
-  mounted() { },
+  mounted() {},
 };
 </script>
 <style lang='css' scoped>
@@ -69,8 +69,6 @@ export default {
 .dev {
   max-width: 350px;
 }
-
-
 
 .framework {
   display: flex;

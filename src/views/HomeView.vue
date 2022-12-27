@@ -1,14 +1,14 @@
 <template>
   <div>
-    <navbar-component/>
-    <home-component/>
+    <navbar-component />
+    <home-component />
   </div>
 </template>
 <script>
-import HomeComponent from '@/components/HomeComponent.vue';
-import NavbarComponent from '@/components/NavbarComponent.vue';
+import HomeComponent from "@/components/HomeComponent.vue";
+import NavbarComponent from "@/components/NavbarComponent.vue";
 export default {
-  components: {HomeComponent, NavbarComponent},
+  components: { HomeComponent, NavbarComponent },
   props: {},
   data() {
     return {};
@@ -19,9 +19,8 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-.navigation nav  a:active {
-    color:var(--navbar-color-hover);
-    border-bottom: 2px solid var(--navbar-hover-4);
-
+.navigation nav a:active {
+  color: var(--navbar-color-hover);
+  border-bottom: 2px solid var(--navbar-hover-4);
 }
 </style>
