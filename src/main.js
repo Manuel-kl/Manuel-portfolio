@@ -1,8 +1,10 @@
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faGithub, faInstagram, faLinkedin, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faArrowUpRightFromSquare, faLink } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+module.exports = {
+    presets: [
+        '@vue/cli-plugin-babel/preset'
+    ]
+}
+mport { FontAwesomeIcon }
+from '@fortawesome/vue-fontawesome'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
