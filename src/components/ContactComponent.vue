@@ -75,13 +75,18 @@ export default {
 };
 </script>
 <style lang='css' scoped>
+@media only screen and (min-width: 878px) and (max-width: 1192px) {
+  .contact {
+    margin: var(--margin-md);
+  }
+}
 .contact-page {
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
 }
 .contact {
-  margin: 0 100px;
+  margin: var(--margin-lg);
 }
 .contact-heading h2 {
   font-size: 2.3rem;

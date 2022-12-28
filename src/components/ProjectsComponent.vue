@@ -408,6 +408,11 @@ export default {
 };
 </script>
 <style lang='css' scoped>
+@media only screen and (min-width: 878px) and (max-width: 1192px) {
+  .projects-lists {
+    margin: var(--margin-md);
+  }
+}
 #pro {
   background-color: var(--background-color);
 }
@@ -423,8 +428,8 @@ export default {
 
 .projects-lists {
   display: grid;
+  margin: var(--margin-lg);
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 100px;
   gap: 1rem;
   padding-bottom: 60px;
 }

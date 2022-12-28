@@ -183,12 +183,17 @@ export default {
   data() {
     return {};
   },
-  created() { },
+  created() {},
   methods: {},
-  mounted() { },
+  mounted() {},
 };
 </script>
 <style lang='css' scoped>
+@media only screen and (min-width: 878px) and (max-width: 1192px) {
+  .blog-list {
+    margin: var(--margin-md);
+  }
+}
 .bl {
   background-color: var(--background-color);
 }
@@ -205,7 +210,7 @@ export default {
 .blog-lists {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 100px;
+  margin: var(--margin-lg);
   gap: 1rem;
   padding-bottom: 60px;
 }
@@ -214,7 +219,6 @@ export default {
   border: 1px solid var(--button-background-color);
   box-shadow: 1px 1px 4px 1px var(--star);
 }
-
 
 .blog-list img {
   width: 35px;

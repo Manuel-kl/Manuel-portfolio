@@ -103,11 +103,16 @@ export default {
 </script>
 
 <style lang='css' scoped>
+@media only screen and (min-width: 878px) and (max-width: 1192px) {
+  .about-m {
+    margin: var(--margin-md);
+  }
+}
 .about-m {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  margin: 0 100px;
+  margin: var(--margin-lg);
   padding-bottom: 20px;
 }
 .profile {

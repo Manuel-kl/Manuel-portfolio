@@ -20,7 +20,7 @@
   --font-color-heading: white;
   --font-color-base: #e6e6e6;
   --font-color-muted: #999;
-  --border-color: #2c2c2c;
+  --border-colorTO: #2c2c2c;
   --font-family-base: "Inter", -apple-system, BlinkMacSystemFont,
     "Helvetica Neue", Arial, sans-serif;
   --font-family-monospace: Menlo, "IBM Plex Mono", Menlo, monospace;
@@ -31,6 +31,8 @@
   --star: #f6cd5d;
   --card-background-color: #1f1f1f;
   --button-background-color: #252525;
+  --margin-lg: 0 100px;
+  --margin-md: 0 50px;
 }
 * {
   padding: 0;

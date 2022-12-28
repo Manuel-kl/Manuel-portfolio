@@ -114,11 +114,18 @@ export default {
 };
 </script>
 <style lang='css' scoped>
+@media only screen and (min-width: 878px) and (max-width: 1192px) {
+  .blog-list {
+    margin: var(--margin-md);
+    /* min-width: 250px; */
+  }
+}
 .blog-lists {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0 100px;
-  gap: 1rem;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin: var(--margin-lg);
+  gap: 1.3rem;
   padding-bottom: 60px;
 }
 
@@ -129,15 +136,21 @@ export default {
 
 .blog-list {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   border: 1px solid var(--font-color-muted);
-  padding: 1rem;
+  padding: 1rem 2rem;
   gap: 1rem;
   border-radius: 5px;
-  /* max-width: 320px; */
+  /* margin: auto;
+  width: 70%;
+  min-width: 250px; */
 }
-
+.blog-list:hover {
+  border: 1px solid var(--button-background-color);
+  box-shadow: 1px 1px 4px 1px var(--star);
+}
 .blog-list p {
   color: var(--font-color-muted);
   font-size: 0.8rem;

@@ -55,8 +55,13 @@ export default {
 };
 </script>
 <style lang='css' scoped>
+@media only screen and (min-width: 878px) and (max-width: 1192px) {
+  .framework-container {
+    margin: var(--margin-md);
+  }
+}
 .framework-container {
-  margin: 0 100px;
+  margin: var(--margin-lg);
   border-top: 2px solid var(--card-background-color);
 }
 

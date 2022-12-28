@@ -25,7 +25,11 @@
         </small>
       </div>
       <div>
-        <img src="../assets/web-development.png" alt="An image of a computer" />
+        <img
+          src="../assets/web-development.png"
+          alt="An image of a computer"
+          class="img-lapt"
+        />
       </div>
     </section>
     <section class="projects-blogs">
@@ -63,6 +67,12 @@ export default {
 };
 </script>
 <style lang='css' scoped>
+@media only screen and (min-width: 878px) and (max-width: 1192px) {
+  .description {
+    margin: var(--margin-md);
+  }
+}
+
 #home-page {
   background-color: var(--background-color);
   font-family: var(--font-family-homepage);
@@ -74,7 +84,7 @@ export default {
   grid-column-gap: 50px;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 100px;
+  margin: var(--margin-lg);
   align-items: center;
 }
 
@@ -92,27 +102,13 @@ export default {
   color: var(--font-color-base);
 }
 
+.description .img-lapt {
+  width: 100%;
+}
+
 .description em {
   font-style: italic;
   color: var(--font-color-muted);
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--card-background-color);
-  padding: 1.2rem;
-  border-radius: 5px;
-}
-
-.projects .star {
-  font-family: var(--font-family-monospace);
-  align-items: center;
-  padding-bottom: 7px;
-}
-
-.projects .star time {
-  color: var(--star);
 }
 
 .projects-blogs {
