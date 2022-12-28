@@ -115,16 +115,20 @@ export default {
 </script>
 <style lang='css' scoped>
 @media only screen and (min-width: 878px) and (max-width: 1192px) {
-  .blog-list {
+  .blog-lists {
     margin: var(--margin-md);
     /* min-width: 250px; */
+  }
+}
+@media screen and (min-width: 1192px) {
+  .blog-lists {
+    margin: var(--margin-lg);
   }
 }
 .blog-lists {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  margin: var(--margin-lg);
   gap: 1.3rem;
   padding-bottom: 60px;
 }

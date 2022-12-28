@@ -60,8 +60,12 @@ export default {
     margin: var(--margin-md);
   }
 }
+@media screen and (min-width: 1192px) {
+  .framework-container {
+    margin: var(--margin-lg);
+  }
+}
 .framework-container {
-  margin: var(--margin-lg);
   border-top: 2px solid var(--card-background-color);
 }
 
@@ -73,6 +77,7 @@ export default {
 
 .dev {
   max-width: 350px;
+  width: 100%;
 }
 
 .framework {
@@ -86,7 +91,7 @@ export default {
 .framework-head {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 100%;
 }
 
 .framework-head h6 {

@@ -31,8 +31,8 @@
   --star: #f6cd5d;
   --card-background-color: #1f1f1f;
   --button-background-color: #252525;
-  --margin-lg: 0 100px;
   --margin-md: 0 50px;
+  --margin-lg: 0 100px;
 }
 * {
   padding: 0;

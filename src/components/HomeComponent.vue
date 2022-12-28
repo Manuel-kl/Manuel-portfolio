@@ -67,9 +67,14 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-@media only screen and (min-width: 878px) and (max-width: 1192px) {
+@media only screen and (min-width: 878px) {
   .description {
     margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 1192px) {
+  .description {
+    margin: var(--margin-lg);
   }
 }
 
@@ -84,7 +89,6 @@ export default {
   grid-column-gap: 50px;
   flex-direction: row;
   justify-content: space-between;
-  margin: var(--margin-lg);
   align-items: center;
 }
 

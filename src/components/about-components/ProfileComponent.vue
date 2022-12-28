@@ -108,11 +108,15 @@ export default {
     margin: var(--margin-md);
   }
 }
+@media screen and (min-width: 1192px) {
+  .about-m {
+    margin: var(--margin-lg);
+  }
+}
 .about-m {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  margin: var(--margin-lg);
   padding-bottom: 20px;
 }
 .profile {

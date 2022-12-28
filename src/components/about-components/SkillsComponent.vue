@@ -63,8 +63,12 @@ export default {
     margin: var(--margin-md);
   }
 }
+@media screen and (min-width: 1192px) {
+  .container {
+    margin: var(--margin-lg);
+  }
+}
 .container {
-  margin: var(--margin-lg);
   border-top: 2px solid var(--card-background-color);
 }
 .languages-tools {
@@ -91,7 +95,7 @@ export default {
 .languages-head {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   padding-bottom: 30px;
 }
 .languages-head h6 {
@@ -138,5 +142,6 @@ export default {
 }
 .dev {
   max-width: 350px;
+  width: 100%;
 }
 </style>

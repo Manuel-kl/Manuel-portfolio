@@ -413,6 +413,11 @@ export default {
     margin: var(--margin-md);
   }
 }
+@media screen and (min-width: 1192px) {
+  .projects-lists {
+    margin: var(--margin-lg);
+  }
+}
 #pro {
   background-color: var(--background-color);
 }
@@ -428,7 +433,6 @@ export default {
 
 .projects-lists {
   display: grid;
-  margin: var(--margin-lg);
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding-bottom: 60px;

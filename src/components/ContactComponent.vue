@@ -80,13 +80,17 @@ export default {
     margin: var(--margin-md);
   }
 }
+@media screen and (min-width: 1192px) {
+  .contact {
+    margin: var(--margin-lg);
+  }
+}
 .contact-page {
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
 }
 .contact {
-  margin: var(--margin-lg);
 }
 .contact-heading h2 {
   font-size: 2.3rem;
