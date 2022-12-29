@@ -37,13 +37,24 @@ export default {
 };
 </script>
 <style lang='css' scoped>
+@media only screen and (min-width: 878px) and (max-width: 1192px) {
+  .about .about-title {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 1192px) {
+  .about .about-title {
+    margin: var(--margin-lg);
+  }
+}
 .about {
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
 }
 .about .about-title {
-  margin: 0 100px 30px;
+  /* margin: 0 0 30px; */
+  margin-bottom: 30px;
   color: var(--font-color-heading);
   font-family: var(--font-family-base);
   border-bottom: 1px solid var(--font-color-heading);

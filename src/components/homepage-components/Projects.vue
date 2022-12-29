@@ -289,6 +289,7 @@ export default {
   border: 1px solid var(--border-color);
   padding: 0.5rem 0.6rem;
   border-radius: 24px;
+  border: 1px solid var(--button-background-color);
   font-size: 0.8rem;
   font-family: var(--font-family-base);
   cursor: pointer;

@@ -131,6 +131,10 @@ export default {
 .profile .name {
   color: var(--font-color-heading);
   font-family: var(--font-family-homepage);
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  /* font-size: 1.3vw; */
 }
 .profile .bio {
   color: var(--font-color-muted);
@@ -140,6 +144,7 @@ export default {
 }
 .profile .contact-links {
   align-items: center;
+  text-align: center;
 }
 
 .profile .contact-links .fa-icon {

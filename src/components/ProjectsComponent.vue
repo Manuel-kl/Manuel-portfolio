@@ -506,6 +506,7 @@ export default {
   background-color: var(--button-background-color);
   line-height: 1;
   border: 1px solid var(--border-color);
+  border: 1px solid var(--button-background-color);
   padding: 0.5rem 0.6rem;
   border-radius: 24px;
   font-size: 0.8rem;

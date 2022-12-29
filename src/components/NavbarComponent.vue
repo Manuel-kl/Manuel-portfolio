@@ -29,13 +29,23 @@ export default {
 <style scoped>
 </style>
 <style lang="css" scoped>
+@media only screen and (min-width: 878px) and (max-width: 1192px) {
+  .navigation {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 1192px) {
+  .navigation {
+    margin: var(--margin-lg);
+  }
+}
 .navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: var(--background-color);
-  padding: 20px 100px 20px 100px;
+  padding: 20px 0;
   height: var(--navbar-height-large);
   font-family: var(--font-family-nav);
   font-size: 1.2rem;
