@@ -189,32 +189,25 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-@media only screen and (min-width: 878px) and (max-width: 1192px) {
-  .blog-lists {
-    margin: var(--margin-md);
-  }
-}
-@media screen and (min-width: 1192px) {
-  .blog-lists {
-    margin: var(--margin-lg);
-  }
-}
 .bl {
   background-color: var(--background-color);
 }
 
+.bl-heading {
+  margin-bottom: 30px;
+}
 .bl-heading h2 {
   font-size: 2.3rem;
-  margin: 0 100px 30px;
   font-family: var(--font-family-base);
   color: var(--font-color-heading);
   border-bottom: 1px solid var(--font-color-heading);
   padding: 20px 0;
+  -bottom: 32px;
 }
 
 .blog-lists {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1rem;
   padding-bottom: 60px;
 }
@@ -231,13 +224,13 @@ export default {
 
 .blog-list {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   border: 1px solid var(--font-color-muted);
-  padding: 1rem;
+  padding: 1rem 2rem;
   gap: 1rem;
   border-radius: 5px;
-  /* max-width: 320px; */
 }
 
 .blog-list p {
@@ -264,5 +257,23 @@ export default {
 .blog-list h2:hover {
   border-bottom: 1px solid var(--font-color-heading);
   padding-bottom: 2px;
+}
+@media only screen and (min-width: 756px) and (max-width: 1192px) {
+  .bl-heading h2,
+  .blog-lists {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 755px) {
+  .bl-heading h2,
+  .blog-lists {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 1192px) {
+  .bl-heading h2,
+  .blog-lists {
+    margin: var(--margin-lg);
+  }
 }
 </style>

@@ -38,8 +38,8 @@
             <p>SQL</p>
           </div>
         </div>
-        <div>
-          <img src="../../assets/web-dev.webp" alt="" class="dev" />
+        <div class="dev">
+          <img src="../../assets/web-dev.webp" alt="" />
         </div>
       </div>
     </div>
@@ -58,16 +58,6 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-@media only screen and (min-width: 878px) and (max-width: 1192px) {
-  .container {
-    margin: var(--margin-md);
-  }
-}
-@media screen and (min-width: 1192px) {
-  .container {
-    margin: var(--margin-lg);
-  }
-}
 .container {
   border-top: 2px solid var(--card-background-color);
 }
@@ -88,7 +78,6 @@ export default {
 .languages {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
   width: 50vw;
 }
@@ -119,14 +108,14 @@ export default {
   color: var(--navbar-color);
   line-height: 1.5rem;
   font-family: var(--font-family-base);
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   margin: 0 15px;
   border-bottom: 1px dotted var(--background-color);
   padding: 15px 0;
 }
 .languages img {
   width: 50px;
-  max-height: 100px;
+  max-height: 60px;
 }
 .languages .link {
   color: var(--background-color);
@@ -141,7 +130,49 @@ export default {
   padding: 15px 0;
 }
 .dev {
-  max-width: 350px;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.dev img {
+  width: 70%;
+}
+@media only screen and (min-width: 756px) and (max-width: 1192px) {
+  .container {
+    margin: var(--margin-md);
+  }
+  .dev img {
+    width: 60%;
+    min-width: 250px;
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 755px) {
+  .container {
+    margin: var(--margin-md);
+  }
+  .languages-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .languages {
+    display: flex;
+    width: 77%;
+    margin: auto;
+  }
+
+  .languages .item {
+    align-items: center;
+  }
+  .languages .item p {
+    font-size: 1.2rem;
+  }
+  .dev img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1192px) {
+  .container {
+    margin: var(--margin-lg);
+  }
 }
 </style>

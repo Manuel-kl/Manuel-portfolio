@@ -103,29 +103,25 @@ export default {
 </script>
 
 <style lang='css' scoped>
-@media only screen and (min-width: 878px) and (max-width: 1192px) {
-  .about-m {
-    margin: var(--margin-md);
-  }
-}
-@media screen and (min-width: 1192px) {
-  .about-m {
-    margin: var(--margin-lg);
-  }
-}
 .about-m {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  padding-bottom: 20px;
+  padding: 30px 0;
 }
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.profile-img {
+  display: flex;
+  justify-content: center;
+}
 .profile-img img {
-  width: 200px;
+  min-width: 130px;
+  max-width: 200px;
+  width: 70%;
   border-radius: 50%;
 }
 .profile .name {
@@ -133,8 +129,7 @@ export default {
   font-family: var(--font-family-homepage);
   width: 100%;
   text-align: center;
-  font-size: 15px;
-  /* font-size: 1.3vw; */
+  font-size: 1.3vw;
 }
 .profile .bio {
   color: var(--font-color-muted);
@@ -214,5 +209,27 @@ export default {
 }
 .alx-link:hover {
   border: 1px solid var(--font-color-muted);
+}
+@media (min-width: 756px) and (max-width: 1192px) {
+  .about-m {
+    margin: var(--margin-md);
+  }
+  .profile .name {
+    /* font-size: 2px; */
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 755px) {
+  .about-m {
+    margin: var(--margin-md);
+    flex-direction: column;
+  }
+  .profile .name {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1192px) {
+  .about-m {
+    margin: var(--margin-lg);
+  }
 }
 </style>

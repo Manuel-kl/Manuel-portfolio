@@ -4,8 +4,8 @@
       <h6>Frameworks and Tools</h6>
     </div>
     <div class="container">
-      <div>
-        <img src="../../assets/web.png" alt="" class="dev" />
+      <div class="dev">
+        <img src="../../assets/web.png" alt="" />
       </div>
       <div class="framework">
         <div class="item">
@@ -55,16 +55,6 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-@media only screen and (min-width: 878px) and (max-width: 1192px) {
-  .framework-container {
-    margin: var(--margin-md);
-  }
-}
-@media screen and (min-width: 1192px) {
-  .framework-container {
-    margin: var(--margin-lg);
-  }
-}
 .framework-container {
   border-top: 2px solid var(--card-background-color);
 }
@@ -76,14 +66,16 @@ export default {
 }
 
 .dev {
-  max-width: 350px;
+  display: flex;
+  justify-content: center;
+}
+.dev img {
   width: 100%;
 }
 
 .framework {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
   width: 50vw;
 }
@@ -116,7 +108,7 @@ export default {
   color: var(--navbar-color);
   line-height: 1.5rem;
   font-family: var(--font-family-base);
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   margin: 0 15px;
   border-bottom: 1px dotted var(--background-color);
   padding: 15px 0;
@@ -140,5 +132,20 @@ export default {
 .framework .item:hover p {
   border-bottom: 1px dotted var(--star);
   padding: 15px 0;
+}
+@media only screen and (min-width: 756px) and (max-width: 1192px) {
+  .framework-container {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 755px) {
+  .framework-container {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 1192px) {
+  .framework-container {
+    margin: var(--margin-lg);
+  }
 }
 </style>

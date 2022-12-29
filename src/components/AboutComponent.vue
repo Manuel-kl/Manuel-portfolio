@@ -37,16 +37,6 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-@media only screen and (min-width: 878px) and (max-width: 1192px) {
-  .about .about-title {
-    margin: var(--margin-md);
-  }
-}
-@media screen and (min-width: 1192px) {
-  .about .about-title {
-    margin: var(--margin-lg);
-  }
-}
 .about {
   display: flex;
   flex-direction: column;
@@ -64,5 +54,20 @@ export default {
   font-family: var(--font-family-base);
   color: var(--font-color-heading);
   padding: 20px 0;
+}
+@media only screen and (min-width: 756px) and (max-width: 1192px) {
+  .about .about-title {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 755px) {
+  .about .about-title {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 1192px) {
+  .about .about-title {
+    margin: var(--margin-lg);
+  }
 }
 </style>

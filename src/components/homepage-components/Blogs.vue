@@ -114,17 +114,6 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-@media only screen and (min-width: 878px) and (max-width: 1192px) {
-  .blog-lists {
-    margin: var(--margin-md);
-    /* min-width: 250px; */
-  }
-}
-@media screen and (min-width: 1192px) {
-  .blog-lists {
-    margin: var(--margin-lg);
-  }
-}
 .blog-lists {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
@@ -147,9 +136,6 @@ export default {
   padding: 1rem 2rem;
   gap: 1rem;
   border-radius: 5px;
-  /* margin: auto;
-  width: 70%;
-  min-width: 250px; */
 }
 .blog-list:hover {
   border: 1px solid var(--button-background-color);
@@ -179,5 +165,22 @@ export default {
 .blog-list h2:hover {
   border-bottom: 1px solid var(--font-color-heading);
   padding-bottom: 2px;
+}
+@media only screen and (min-width: 756px) and (max-width: 1192px) {
+  .blog-lists {
+    margin: var(--margin-md);
+    /* min-width: 250px; */
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 755px) {
+  .blog-lists {
+    margin: var(--margin-md);
+    /* min-width: 250px; */
+  }
+}
+@media screen and (min-width: 1192px) {
+  .blog-lists {
+    margin: var(--margin-lg);
+  }
 }
 </style>

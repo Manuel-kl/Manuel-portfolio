@@ -408,23 +408,16 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-@media only screen and (min-width: 878px) and (max-width: 1192px) {
-  .projects-lists {
-    margin: var(--margin-md);
-  }
-}
-@media screen and (min-width: 1192px) {
-  .projects-lists {
-    margin: var(--margin-lg);
-  }
-}
 #pro {
   background-color: var(--background-color);
 }
+.pro-heading {
+  margin-bottom: 30px;
+}
 
 .pro-heading h2 {
+  margin: var(--margin-lg);
   font-size: 2.3rem;
-  margin: 0 100px 30px;
   border-bottom: 1px solid var(--font-color-heading);
   font-family: var(--font-family-base);
   color: var(--font-color-heading);
@@ -433,7 +426,7 @@ export default {
 
 .projects-lists {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1rem;
   padding-bottom: 60px;
 }
@@ -516,5 +509,25 @@ export default {
 
 .projects .links a button:hover {
   border: 1px solid var(--font-color-muted);
+}
+@media only screen and (min-width: 756px) and (max-width: 1192px) {
+  .pro-heading h2,
+  .projects-lists {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 755px) {
+  .pro-heading h2,
+  .projects-lists {
+    margin: var(--margin-md);
+  }
+  .projects {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1192px) {
+  .projects-lists {
+    margin: var(--margin-lg);
+  }
 }
 </style>

@@ -67,17 +67,6 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-@media only screen and (min-width: 878px) {
-  .description {
-    margin: var(--margin-md);
-  }
-}
-@media screen and (min-width: 1192px) {
-  .description {
-    margin: var(--margin-lg);
-  }
-}
-
 #home-page {
   background-color: var(--background-color);
   font-family: var(--font-family-homepage);
@@ -107,7 +96,7 @@ export default {
 }
 
 .description .img-lapt {
-  width: 100%;
+  width: 90%;
 }
 
 .description em {
@@ -118,7 +107,7 @@ export default {
 .projects-blogs {
   display: flex;
   flex-direction: row;
-  margin: 30px 100px 20px 100px;
+  padding: 20px 0 30px;
   justify-content: space-between;
 }
 
@@ -148,5 +137,23 @@ export default {
 
 .projects-blogs button:hover {
   border: 1px solid var(--font-color-muted);
+}
+@media only screen and (min-width: 756px) {
+  .projects-blogs,
+  .description {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 1192px) {
+  .projects-blogs,
+  .description {
+    margin: var(--margin-lg);
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 755px) {
+  .projects-blogs,
+  .description {
+    margin: var(--margin-md);
+  }
 }
 </style>

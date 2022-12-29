@@ -29,16 +29,6 @@ export default {
 <style scoped>
 </style>
 <style lang="css" scoped>
-@media only screen and (min-width: 878px) and (max-width: 1192px) {
-  .navigation {
-    margin: var(--margin-md);
-  }
-}
-@media screen and (min-width: 1192px) {
-  .navigation {
-    margin: var(--margin-lg);
-  }
-}
 .navigation {
   display: flex;
   flex-direction: row;
@@ -93,5 +83,20 @@ export default {
 .navigation nav a:nth-child(4):hover {
   color: var(--navbar-color-hover);
   border-bottom: 2px solid var(--navbar-hover-4);
+}
+@media only screen and (min-width: 756px) and (max-width: 1192px) {
+  .navigation {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 755px) {
+  .navigation {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 1192px) {
+  .navigation {
+    margin: var(--margin-lg);
+  }
 }
 </style>

@@ -7,50 +7,70 @@
 
       <div class="contact-container">
         <div class="lwt">
+          <span></span>
           <h4>Let's work together</h4>
           <span></span>
         </div>
-        <div class="links">
-          <div class="contact-link">
-            <a
-              href="https://wa.me/+254743520021/?text=Hello%20Emmanuel..."
-              target="_blank"
-              ><img src="../assets/whatsapp.png" alt="whatsapp" />Whatsapp</a
-            >
-          </div>
-          <div class="contact-link">
-            <a href="https://twitter.com/Manuelkl_" target="_blank"
-              ><img src="../assets/twitter.png" alt="twitter" />Twitter</a
-            >
-          </div>
-          <div class="contact-link">
-            <a href="https://www.instagram.com/manuel_k_l_/" target="_blank">
-              <img src="../assets/instagram.png" alt="instagram" />Instagram
-            </a>
-          </div>
-          <div class="contact-link">
-            <a href="mailto:mannuehkipkirui@gmail.com" target="_blank"
-              ><img src="../assets/mail.png" alt="mail" />Email</a
-            >
-          </div>
-          <div class="contact-link">
-            <a href="https://linkedin.com/in/elangat" target="_blank"
-              ><img src="../assets/linkedin.png" alt="linkedin" />LinkedIn</a
-            >
+        <div>
+          <div class="links">
+            <div class="contact-link">
+              <a
+                href="https://wa.me/+254743520021/?text=Hello%20Emmanuel..."
+                target="_blank"
+                ><img src="../assets/whatsapp.png" alt="whatsapp" />Whatsapp</a
+              >
+            </div>
+            <div class="contact-link">
+              <a href="https://twitter.com/Manuelkl_" target="_blank"
+                ><img src="../assets/twitter.png" alt="twitter" />Twitter</a
+              >
+            </div>
+            <div class="contact-link">
+              <a href="https://www.instagram.com/manuel_k_l_/" target="_blank">
+                <img src="../assets/instagram.png" alt="instagram" />Instagram
+              </a>
+            </div>
+            <div class="contact-link">
+              <a href="mailto:mannuehkipkirui@gmail.com" target="_blank"
+                ><img src="../assets/mail.png" alt="mail" />Email</a
+              >
+            </div>
+            <div class="contact-link">
+              <a href="https://linkedin.com/in/elangat" target="_blank"
+                ><img src="../assets/linkedin.png" alt="linkedin" />LinkedIn</a
+              >
+            </div>
           </div>
         </div>
         <form action="post" class="message">
           <div class="inp">
             <label for="name">Your Name</label>
-            <input type="text" id="name" />
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
           </div>
           <div class="inp">
             <label for="email">Email</label>
-            <input type="email" id="email" />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
           </div>
           <div class="inp">
             <label for="message">Message</label>
-            <textarea name="message" id="message" cols="10" rows="7"></textarea>
+            <textarea
+              name="message"
+              id="message"
+              cols="10"
+              rows="7"
+              placeholder="Type your message"
+              required
+            ></textarea>
           </div>
           <div class="button">
             <a href="#"><button>SEND</button></a>
@@ -75,22 +95,15 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-@media only screen and (min-width: 878px) and (max-width: 1192px) {
-  .contact {
-    margin: var(--margin-md);
-  }
-}
-@media screen and (min-width: 1192px) {
-  .contact {
-    margin: var(--margin-lg);
-  }
-}
 .contact-page {
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
 }
-.contact {
+::placeholder {
+  font-weight: 100;
+  font-style: italic;
+  font-size: medium;
 }
 .contact-heading h2 {
   font-size: 2.3rem;
@@ -109,6 +122,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
+  align-items: center;
   text-align: left;
   min-width: 500px;
   background-color: var(--card-background-color);
@@ -125,6 +139,7 @@ export default {
 .message textarea {
   width: 20rem;
   min-width: 250px;
+  background-color: var(--font-color-muted);
   max-width: 350px;
   padding: 10px 20px;
   border-radius: 5px;
@@ -154,10 +169,12 @@ export default {
   cursor: pointer;
   font-size: 1.4rem;
   letter-spacing: 0.7px;
-  color: var(--star);
+  color: #cbaa51;
 }
 .message button:hover {
-  box-shadow: 1px 1px 2px 2px var(--star);
+  box-shadow: 1px 1px 2px 2px var(--border-color);
+  background-color: #605332;
+  color: var(--font-color-base);
 }
 .contact-container .lwt {
   display: flex;
@@ -167,7 +184,6 @@ export default {
   color: var(--font-color-muted);
   gap: 5px;
   justify-content: center;
-  padding-bottom: 55px;
 }
 .contact-container .lwt span {
   border-bottom: 1px dashed var(--font-color-muted);
@@ -188,13 +204,13 @@ export default {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  padding-top: 55px;
+  padding: 55px 0;
   max-width: 1000px;
 }
 .contact-container .contact-link {
-  flex-basis: 20%;
-  padding: 7px 25px;
-  margin: 20px;
+  flex-basis: 25%;
+  padding: 5px 15px;
+  margin: 10px;
   border: 1px solid var(--background-color);
 }
 .contact-container .contact-link img {
@@ -217,5 +233,20 @@ export default {
   background-color: var(--border-color);
   padding: 7px 25px;
   border-radius: 45px;
+}
+@media only screen and (min-width: 756px) and (max-width: 1192px) {
+  .contact {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 755px) {
+  .contact {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 1192px) {
+  .contact {
+    margin: var(--margin-lg);
+  }
 }
 </style>

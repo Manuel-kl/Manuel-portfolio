@@ -207,16 +207,6 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-@media screen and (min-width: 878px) and (max-width: 1192px) {
-  .projects-lists {
-    margin: var(--margin-md);
-  }
-}
-@media screen and (min-width: 1192px) {
-  .projects-lists {
-    margin: var(--margin-lg);
-  }
-}
 .projects-lists {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
@@ -297,5 +287,20 @@ export default {
 
 .projects .links a button:hover {
   border: 1px solid var(--font-color-muted);
+}
+@media screen and (min-width: 756px) and (max-width: 1192px) {
+  .projects-lists {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 755px) {
+  .projects-lists {
+    margin: var(--margin-md);
+  }
+}
+@media screen and (min-width: 1192px) {
+  .projects-lists {
+    margin: var(--margin-lg);
+  }
 }
 </style>
