@@ -184,5 +184,11 @@ export default {
   .container .framework .item {
     flex-basis: 0;
   }
+  .dev {
+    width: 100%;
+    max-width: 250px;
+    min-width: 200px;
+    margin: auto;
+  }
 }
 </style>
