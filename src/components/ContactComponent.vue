@@ -250,4 +250,9 @@ export default {
     margin: var(--margin-lg);
   }
 }
+@media screen and (min-width: 655px) {
+  .contact {
+    margin: 1rem;
+  }
+}
 </style>
