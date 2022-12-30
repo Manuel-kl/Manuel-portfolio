@@ -439,6 +439,8 @@ export default {
   padding: 1.2rem;
   border: 1px solid var(--card-background-color);
   border-radius: 5px;
+  max-width: 450px;
+  margin: auto;
 }
 
 .projects:hover {

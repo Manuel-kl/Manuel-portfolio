@@ -277,4 +277,10 @@ export default {
     margin: var(--margin-lg);
   }
 }
+@media screen and (max-width: 655px) {
+  .bl-heading h2,
+  .blog-lists {
+    margin: 1rem;
+  }
+}
 </style>
