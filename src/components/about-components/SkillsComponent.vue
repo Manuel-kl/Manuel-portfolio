@@ -14,9 +14,15 @@
           </div>
           <div class="item">
             <font-awesome-icon icon="fa-solid fa-link" class="link" />
-            <img src="../../assets/JavaScript_png.png" alt="JavaScript logo" />
-            <p>JavaScript</p>
+            <img src="../../assets/python_png.png" alt="python logo" />
+            <p>Python</p>
           </div>
+          <div class="item">
+            <font-awesome-icon icon="fa-solid fa-link" class="link" />
+            <img src="../../assets/sql_png.png" alt="sql logo" />
+            <p>SQL</p>
+          </div>
+
           <div class="item">
             <font-awesome-icon icon="fa-solid fa-link" class="link" />
             <img src="../../assets/html_png.png" alt="HTML logo" />
@@ -29,13 +35,8 @@
           </div>
           <div class="item">
             <font-awesome-icon icon="fa-solid fa-link" class="link" />
-            <img src="../../assets/python_png.png" alt="python logo" />
-            <p>Python</p>
-          </div>
-          <div class="item">
-            <font-awesome-icon icon="fa-solid fa-link" class="link" />
-            <img src="../../assets/sql_png.png" alt="sql logo" />
-            <p>SQL</p>
+            <img src="../../assets/JavaScript_png.png" alt="JavaScript logo" />
+            <p>JavaScript</p>
           </div>
         </div>
         <div class="dev">
@@ -92,7 +93,7 @@ export default {
   font-size: 2.3rem;
   font-family: var(--font-family-base);
   padding: 45px 0 0;
-  line-height: 0.7;
+  line-height: 30px;
   max-width: fit-content;
   border-bottom: 1px dashed var(--font-color-muted);
 }
@@ -167,12 +168,48 @@ export default {
     font-size: 1.2rem;
   }
   .dev img {
+    max-width: 350px;
     width: 60%;
   }
 }
 @media screen and (min-width: 1192px) {
   .container {
     margin: var(--margin-lg);
+  }
+}
+@media screen and (max-width: 655px) {
+  .container {
+    margin: 1rem;
+  }
+  .skills-heading h4 {
+    font-size: 2rem;
+  }
+  .languages-head h6 {
+    font-size: 1.7rem;
+  }
+
+  .languages-tools {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .languages {
+    gap: 10px;
+    width: 100%;
+  }
+  .languages .item p {
+    font-size: 1rem;
+  }
+  .languages .item {
+    /* display: flex;
+    gap: 25px; */
+    flex-basis: 0;
+  }
+  .dev {
+    width: 100%;
+    margin-top: 1rem;
+    max-width: 450px;
+    min-width: 300px;
   }
 }
 </style>

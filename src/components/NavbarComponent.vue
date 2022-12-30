@@ -116,7 +116,15 @@ export default {
     margin: 0 5px;
   }
   .navigation .nav-wrapper span {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .navigation nav .active {
+    color: var(--font-color-base);
+    border-bottom: 2px groove var(--star);
+    background-color: var(--card-background-color);
+    padding: 5px 1px;
+    border-radius: 7px;
   }
 }
 </style>

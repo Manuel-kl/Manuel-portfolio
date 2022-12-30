@@ -16,7 +16,7 @@
         <div class="item">
           <font-awesome-icon icon="fa-solid fa-link" class="link" />
           <img src="../../assets/logo.png" alt="vue logo" />
-          <p>Vue Js</p>
+          <p>VueJs</p>
         </div>
         <div class="item">
           <font-awesome-icon icon="fa-solid fa-link" class="link" />
@@ -70,7 +70,8 @@ export default {
   justify-content: center;
 }
 .dev img {
-  width: 100%;
+  width: 70%;
+  min-width: 200px;
 }
 
 .framework {
@@ -91,7 +92,7 @@ export default {
   font-size: 2.3rem;
   font-family: var(--font-family-base);
   padding: 45px 0 0;
-  line-height: 0.7;
+  line-height: 30px;
   max-width: fit-content;
   border-bottom: 1px dashed var(--font-color-muted);
 }
@@ -137,15 +138,51 @@ export default {
   .framework-container {
     margin: var(--margin-md);
   }
+  .dev {
+    width: 70%;
+  }
 }
 @media screen and (min-width: 656px) and (max-width: 755px) {
   .framework-container {
     margin: var(--margin-md);
   }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container .dev {
+    width: 100%;
+    max-width: 250px;
+    min-width: 200px;
+    margin: auto;
+  }
+  .framework {
+    width: 100%;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1192px) {
   .framework-container {
     margin: var(--margin-lg);
+  }
+}
+@media screen and (max-width: 655px) {
+  .framework-container {
+    margin: 1rem;
+  }
+  .framework-container .framework-head h6 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container .framework {
+    width: 100%;
+  }
+  .container .framework .item {
+    flex-basis: 0;
   }
 }
 </style>

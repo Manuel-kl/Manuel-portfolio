@@ -4,7 +4,7 @@
       <h3>Langat Emmanuel <span>|</span> Have a good {{ dayOfWeek }}!</h3>
     </div>
     <div class="greetings-sm">
-      <h3>Langat Emmanuel</h3>
+      <h3>Langat K. Emmanuel</h3>
       <h4>Have a good {{ dayOfWeek }}!</h4>
     </div>
 
@@ -66,7 +66,8 @@ export default {
   display: none;
 }
 .footer .greetings h3,
-h4 {
+h4,
+.footer .greetings-sm h3 {
   font-size: 1.1rem;
   font-family: var(--font-family-base);
   font-weight: 600;
@@ -98,10 +99,19 @@ h4 {
     flex-direction: column;
     text-align: center;
     gap: 0.5rem 0;
+    padding-top: 0.7rem;
     font-size: 1.2rem;
   }
   .footer .greetings {
     display: none;
+  }
+  .footer .greetings-sm h3 {
+    font-size: 1.4rem;
+    word-spacing: 0.3rem;
+  }
+  .footer .greetings-sm h4 {
+    color: var(--font-color-muted);
+    font-weight: 100;
   }
   .footer {
     padding: 0.4rem;

@@ -135,6 +135,7 @@ export default {
   color: var(--font-color-muted);
   font-family: var(--font-family-homepage);
   text-align: center;
+  border-bottom: 1px solid var(--border-color);
   padding: 10px 0;
 }
 .profile .contact-links {
@@ -230,6 +231,25 @@ export default {
 @media (min-width: 1192px) {
   .about-m {
     margin: var(--margin-lg);
+  }
+}
+@media (max-width: 655px) {
+  .about-m {
+    margin: 1rem;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .profile .name {
+    font-size: 0.8rem;
+  }
+  .profile .bio {
+  }
+  .description p {
+    font-size: 1rem;
+  }
+  .alx-link {
+    padding: 6px;
+    font-size: 0.72rem;
   }
 }
 </style>

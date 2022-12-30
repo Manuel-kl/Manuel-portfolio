@@ -97,7 +97,7 @@ export default {
 }
 
 .description .img-lapt {
-  width: 90%;
+  width: 77%;
 }
 
 .description em {
@@ -149,6 +149,7 @@ export default {
   .projects-blogs,
   .description {
     margin: var(--margin-lg);
+    padding-top: 15px;
   }
 }
 @media screen and (min-width: 656px) and (max-width: 755px) {

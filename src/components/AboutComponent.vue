@@ -71,4 +71,12 @@ export default {
     margin: var(--margin-lg);
   }
 }
+@media screen and (max-width: 655px) {
+  .about .about-title {
+    margin: 1rem;
+  }
+  .about .about-title h2 {
+    font-size: 2rem;
+  }
+}
 </style>
