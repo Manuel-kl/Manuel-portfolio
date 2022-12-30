@@ -106,12 +106,13 @@ h4,
     display: none;
   }
   .footer .greetings-sm h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     word-spacing: 0.3rem;
   }
   .footer .greetings-sm h4 {
     color: var(--font-color-muted);
     font-weight: 100;
+    font-size: 1rem;
   }
   .footer {
     padding: 0.4rem;

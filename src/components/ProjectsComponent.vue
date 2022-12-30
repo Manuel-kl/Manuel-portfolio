@@ -531,4 +531,10 @@ export default {
     margin: var(--margin-lg);
   }
 }
+@media screen and (max-width: 655px) {
+  .pro-heading h2,
+  .projects-lists {
+    margin: 1rem;
+  }
+}
 </style>
