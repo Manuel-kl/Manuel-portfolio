@@ -24,7 +24,7 @@
           <em>Last updated: December 24th, 2022</em>
         </small>
       </div>
-      <div>
+      <div class="img-cont">
         <img
           src="../assets/web-development.png"
           alt="An image of a computer"
@@ -70,6 +70,7 @@ export default {
 #home-page {
   background-color: var(--background-color);
   font-family: var(--font-family-homepage);
+  padding-top: 70px;
 }
 
 .description {
@@ -154,6 +155,42 @@ export default {
   .projects-blogs,
   .description {
     margin: var(--margin-md);
+  }
+}
+@media (max-width: 655px) {
+  .projects-blogs,
+  .description {
+    margin: 1rem;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+  .description .intro h1 {
+    font-size: 2.2rem;
+    padding-top: 1rem;
+    line-height: 1.1;
+  }
+  .description .intro p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .description .img-lapt {
+    width: 77%;
+    max-width: 350px;
+    padding-top: 2rem;
+  }
+
+  .description .img-cont {
+    display: flex;
+    justify-content: center;
+  }
+  .description img {
+    align-self: center;
+  }
+  .projects-blogs {
+    margin: 0rem 1rem;
+    padding: 1rem 0;
   }
 }
 </style>

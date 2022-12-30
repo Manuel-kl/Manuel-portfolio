@@ -183,4 +183,9 @@ export default {
     margin: var(--margin-lg);
   }
 }
+@media screen and (max-width: 655px) {
+  .blog-lists {
+    margin: 0 1rem;
+  }
+}
 </style>

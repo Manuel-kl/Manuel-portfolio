@@ -410,6 +410,7 @@ export default {
 <style lang='css' scoped>
 #pro {
   background-color: var(--background-color);
+  padding-top: 70px;
 }
 .pro-heading {
   margin-bottom: 30px;
@@ -522,7 +523,7 @@ export default {
     margin: var(--margin-md);
   }
   .projects {
-    align-items: center;
+    /* align-items: center; */
   }
 }
 @media screen and (min-width: 1192px) {

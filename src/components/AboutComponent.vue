@@ -41,6 +41,7 @@ export default {
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
+  padding-top: 70px;
 }
 .about .about-title {
   /* margin: 0 0 30px; */

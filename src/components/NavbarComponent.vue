@@ -7,10 +7,10 @@
       </router-link>
     </div>
     <nav>
-      <router-link to="/about">About</router-link>
-      <router-link to="/blog">Blog</router-link>
-      <router-link to="/projects">Projects</router-link>
-      <router-link to="/contact">Contact</router-link>
+      <router-link to="/about" active-class="active">About</router-link>
+      <router-link to="/blog" active-class="active">Blog</router-link>
+      <router-link to="/projects" active-class="active">Projects</router-link>
+      <router-link to="/contact" active-class="active">Contact</router-link>
     </nav>
   </div>
 </template>
@@ -33,12 +33,15 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: -webkit-fill-available;
   align-items: center;
   background-color: var(--background-color);
-  padding: 20px 0;
+  /* margin: 10px 0; */
   height: var(--navbar-height-large);
   font-family: var(--font-family-nav);
   font-size: 1.2rem;
+  position: fixed;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .navigation .nav-wrapper a {
@@ -47,7 +50,7 @@ export default {
   align-items: center;
   color: white;
   text-decoration: none;
-  padding: 5px;
+  padding: 0 5px;
 }
 
 .navigation .nav-wrapper span {
@@ -65,9 +68,14 @@ export default {
   color: var(--navbar-color);
   text-decoration: none;
   margin: 0 15px;
-  padding-bottom: 5px;
 }
-
+.navigation nav .active {
+  color: var(--font-color-base);
+  border-bottom: 2px groove var(--star);
+  background-color: var(--card-background-color);
+  padding: 5px 15px;
+  border-radius: 7px;
+}
 .navigation nav a:nth-child(1):hover {
   color: var(--navbar-color-hover);
   border-bottom: 2px solid var(--navbar-hover-1);
@@ -97,6 +105,18 @@ export default {
 @media screen and (min-width: 1192px) {
   .navigation {
     margin: var(--margin-lg);
+  }
+}
+@media screen and (max-width: 655px) {
+  .navigation {
+    padding: 0 5px;
+  }
+  .navigation nav a {
+    font-size: 4vw;
+    margin: 0 5px;
+  }
+  .navigation .nav-wrapper span {
+    font-size: 1.2rem;
   }
 }
 </style>

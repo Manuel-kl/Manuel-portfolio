@@ -99,6 +99,7 @@ export default {
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
+  padding-top: 70px;
 }
 ::placeholder {
   font-weight: 100;

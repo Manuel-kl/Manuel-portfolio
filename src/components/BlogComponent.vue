@@ -191,6 +191,7 @@ export default {
 <style lang='css' scoped>
 .bl {
   background-color: var(--background-color);
+  padding-top: 70px;
 }
 
 .bl-heading {

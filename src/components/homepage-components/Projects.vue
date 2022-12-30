@@ -303,4 +303,9 @@ export default {
     margin: var(--margin-lg);
   }
 }
+@media screen and (max-width: 755px) {
+  .projects-lists {
+    margin: 1rem;
+  }
+}
 </style>
