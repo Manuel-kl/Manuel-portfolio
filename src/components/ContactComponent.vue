@@ -41,40 +41,43 @@
             </div>
           </div>
         </div>
-        <form action="post" class="message">
-          <div class="inp">
-            <label for="name">Your Name</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your name"
-              required
-            />
-          </div>
-          <div class="inp">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-          <div class="inp">
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="10"
-              rows="7"
-              placeholder="Type your message"
-              required
-            ></textarea>
-          </div>
-          <div class="button">
-            <a href="#"><button>SEND</button></a>
-          </div>
-        </form>
+        <div class="form">
+          <form action="post" class="message">
+            <div class="inp">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="inp">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="inp">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="10"
+                rows="7"
+                placeholder="Type your message"
+                required
+              ></textarea>
+            </div>
+            <div class="button">
+              <button type="submit">SEND</button>
+              <!-- <a href="#"><button>SEND</button></a> -->
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <footer-component />
@@ -103,7 +106,7 @@ export default {
 ::placeholder {
   font-weight: 100;
   font-style: italic;
-  font-size: medium;
+  font-size: 1rem;
 }
 .contact-heading h2 {
   font-size: 2.3rem;
@@ -121,13 +124,13 @@ export default {
 .message {
   display: flex;
   flex-direction: column;
-  margin: 3rem auto;
+  margin: 2.5rem auto;
+  width: fit-content;
   align-items: center;
   text-align: left;
-  min-width: 500px;
   background-color: var(--card-background-color);
   border-radius: 33px;
-  padding: 100px;
+  padding: 10px 50px;
 }
 .message label {
   font-size: 1.2rem;
@@ -137,7 +140,7 @@ export default {
 }
 .message input,
 .message textarea {
-  width: 20rem;
+  width: 65vw;
   min-width: 250px;
   background-color: var(--font-color-muted);
   max-width: 350px;
@@ -157,7 +160,7 @@ export default {
   flex-direction: column;
 }
 .message .button {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .message button {
   padding: 10px 20px;
@@ -246,6 +249,9 @@ export default {
   .links {
     margin: auto;
   }
+  .message {
+    /* margin: 0; */
+  }
 }
 @media screen and (min-width: 656px) and (max-width: 755px) {
   .contact {
@@ -268,11 +274,37 @@ export default {
   .lwt h4 {
     font-size: 1.5rem;
   }
-  .links {
-    margin: auto;
+  .c-links {
+    padding: 1rem 0;
+  }
+  .contact-container {
+    width: 100%;
+  }
+  .contact-container .links {
+    margin: 0 0 0 2rem;
+    justify-content: flex-start;
   }
   .links .contact-link {
     margin: 0;
+    padding: 0.5rem 0;
+  }
+  .links .contact-link a {
+    font-size: 1rem;
+  }
+  .message {
+    padding: 0 20px;
+    /* margin: 2.5rem auto; */
+  }
+  .message input,
+  .message textarea {
+    background-color: var(--font-color-muted);
+    border-radius: 5px;
+    max-width: 330px;
+    border: none;
+    min-width: 200px;
+    width: 65vw;
+    overflow-x: hidden;
+    font-size: 1rem;
   }
 }
 </style>
