@@ -538,5 +538,8 @@ export default {
   .projects-lists {
     margin: 1rem;
   }
+  .pro-heading h2 {
+    font-size: 2rem;
+  }
 }
 </style>

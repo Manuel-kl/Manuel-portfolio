@@ -282,5 +282,8 @@ export default {
   .blog-lists {
     margin: 1rem;
   }
+  .bl-heading h2 {
+    font-size: 2rem;
+  }
 }
 </style>

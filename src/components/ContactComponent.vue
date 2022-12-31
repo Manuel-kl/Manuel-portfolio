@@ -4,14 +4,13 @@
       <div class="contact-heading">
         <h2>Get in touch</h2>
       </div>
-
       <div class="contact-container">
         <div class="lwt">
           <span></span>
           <h4>Let's work together</h4>
           <span></span>
         </div>
-        <div>
+        <div class="c-links">
           <div class="links">
             <div class="contact-link">
               <a
@@ -122,7 +121,7 @@ export default {
 .message {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 3rem auto;
   align-items: center;
   text-align: left;
   min-width: 500px;
@@ -200,16 +199,21 @@ export default {
   font-family: var(--font-family-base);
   max-width: fit-content;
 }
+.c-links {
+  display: flex;
+  border-bottom: 1px groove var(--font-color-muted);
+  justify-content: center;
+  padding: 55px 0;
+}
+
 .contact-container .links {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  padding: 55px 0;
+  justify-content: center;
   max-width: 1000px;
 }
 .contact-container .contact-link {
-  flex-basis: 25%;
   padding: 5px 15px;
   margin: 10px;
   border: 1px solid var(--background-color);
@@ -239,6 +243,9 @@ export default {
   .contact {
     margin: var(--margin-md);
   }
+  .links {
+    margin: auto;
+  }
 }
 @media screen and (min-width: 656px) and (max-width: 755px) {
   .contact {
@@ -250,9 +257,22 @@ export default {
     margin: var(--margin-lg);
   }
 }
-@media screen and (min-width: 655px) {
+
+@media screen and (max-width: 655px) {
   .contact {
     margin: 1rem;
+  }
+  .contact-heading h2 {
+    font-size: 2rem;
+  }
+  .lwt h4 {
+    font-size: 1.5rem;
+  }
+  .links {
+    margin: auto;
+  }
+  .links .contact-link {
+    margin: 0;
   }
 }
 </style>
