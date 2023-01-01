@@ -66,39 +66,6 @@
         </a>
       </div>
     </div>
-    <div class="blog-list">
-      <div>
-        <img src="../../assets/logo.png" alt="Vue Js logo" />
-      </div>
-      <div>
-        <p>December 24, 2022</p>
-        <a href="#" onclick="event.preventDefault()">
-          <h2>Understanding Vue</h2>
-        </a>
-      </div>
-    </div>
-    <div class="blog-list">
-      <div>
-        <img src="../../assets/logo.png" alt="Vue Js logo" />
-      </div>
-      <div>
-        <p>December 24, 2022</p>
-        <a href="#" onclick="event.preventDefault()">
-          <h2>Understanding Vue</h2>
-        </a>
-      </div>
-    </div>
-    <div class="blog-list">
-      <div>
-        <img src="../../assets/logo.png" alt="Vue Js logo" />
-      </div>
-      <div>
-        <p>December 24, 2022</p>
-        <a href="#" onclick="event.preventDefault()">
-          <h2>Understanding Vue</h2>
-        </a>
-      </div>
-    </div>
   </div>
 </template>
 <script>
