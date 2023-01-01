@@ -34,18 +34,18 @@
     </section>
     <section class="projects-blogs">
       <h2>Blogs</h2>
-      <a href="#" onclick="event.preventDefault()">
-        <button>View all</button></a
-      >
+      <router-link to="/blog">
+        <button>View all</button>
+      </router-link>
     </section>
     <section>
       <Blogs />
     </section>
     <section class="projects-blogs">
       <h2>Projects</h2>
-      <a href="#" onclick="event.preventDefault()">
-        <button>View all</button></a
-      >
+      <router-link to="/projects">
+        <button>View all</button>
+      </router-link>
     </section>
     <projects />
     <footer-component />

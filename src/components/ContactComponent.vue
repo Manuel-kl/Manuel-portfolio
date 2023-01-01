@@ -86,6 +86,11 @@
 <script>
 import FooterComponent from "./FooterComponent.vue";
 export default {
+  watch: {
+    $route() {
+      window.scrollTo(0, 0);
+    },
+  },
   components: { FooterComponent },
   props: {},
   data() {
