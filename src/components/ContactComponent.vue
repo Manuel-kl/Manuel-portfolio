@@ -42,10 +42,11 @@
           </div>
         </div>
         <div class="form">
-          <form action="post" class="message">
+          <form @submit.prevent="post" class="message">
             <div class="inp">
               <label for="name">Your Name</label>
               <input
+                v-model="form.name"
                 type="text"
                 id="name"
                 placeholder="Enter your name"
@@ -55,6 +56,7 @@
             <div class="inp">
               <label for="email">Email</label>
               <input
+                v-model="form.email"
                 type="email"
                 id="email"
                 placeholder="Enter your email"
@@ -64,6 +66,7 @@
             <div class="inp">
               <label for="message">Message</label>
               <textarea
+                v-model="form.message"
                 name="message"
                 id="message"
                 cols="10"
@@ -73,10 +76,17 @@
               ></textarea>
             </div>
             <div class="button">
-              <button type="submit">SEND</button>
-              <!-- <a href="#"><button>SEND</button></a> -->
+              <button type="submit" :disabled="loading">
+                <template v-if="loading">
+                  <i class="fa fa-spinner fa-spin"></i> Sending...
+                </template>
+                <template v-else> SEND </template>
+              </button>
             </div>
           </form>
+          <div>
+            <p class="response" v-if="message">{{ message }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -84,24 +94,62 @@
   </div>
 </template>
 <script>
+import axios from "axios";
 import FooterComponent from "./FooterComponent.vue";
 export default {
-  watch: {
-    $route() {
-      window.scrollTo(0, 0);
-    },
-  },
+  watch: {},
   components: { FooterComponent },
+
   props: {},
   data() {
-    return {};
+    return {
+      form: {
+        name: "",
+        email: "",
+        message: "",
+      },
+      data: null,
+      message: "",
+      loading: false,
+    };
   },
   created() {},
-  methods: {},
+  methods: {
+    async post() {
+      this.loading = true;
+      try {
+        const response = await axios.post(
+          "http://manuel.discountbookcrawlers.com/api/message",
+          this.form
+        );
+        this.data = response.data;
+        this.message = "Message send successfully";
+        this.form = {
+          name: "",
+          email: "",
+          message: "",
+        };
+      } catch (error) {
+        console.error(error);
+      } finally {
+        this.loading = false; // set loading state to false
+      }
+    },
+  },
   mounted() {},
 };
 </script>
 <style lang='css' scoped>
+.response {
+  color: rgb(5, 255, 80);
+  font-size: 1.5rem;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  background-color: var(--border-color);
+}
 .contact-page {
   display: flex;
   flex-direction: column;
