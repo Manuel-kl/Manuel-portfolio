@@ -86,6 +86,7 @@
           </form>
           <div>
             <p class="response" v-if="message">{{ message }}</p>
+            <p class="response" v-if="error">{{ error }}</p>
           </div>
         </div>
       </div>
@@ -111,6 +112,7 @@ export default {
       data: null,
       message: "",
       loading: false,
+      error: null,
     };
   },
   created() {},
@@ -130,7 +132,7 @@ export default {
           message: "",
         };
       } catch (error) {
-        console.error(error);
+        this.error = error;
       } finally {
         this.loading = false; // set loading state to false
       }
