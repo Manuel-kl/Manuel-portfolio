@@ -86,7 +86,7 @@
           </form>
           <div>
             <p class="response" v-if="message">{{ message }}</p>
-            <p class="response" v-if="error">{{ error }}</p>
+            <p class="response-error" v-if="error">{{ error }}</p>
           </div>
         </div>
       </div>
@@ -144,6 +144,16 @@ export default {
 <style lang='css' scoped>
 .response {
   color: rgb(5, 255, 80);
+  font-size: 1.5rem;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  background-color: var(--border-color);
+}
+.response-error {
+  color: rgb(236, 53, 53);
   font-size: 1.5rem;
   width: fit-content;
   margin: auto;
