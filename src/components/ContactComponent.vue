@@ -121,7 +121,7 @@ export default {
       this.loading = true;
       try {
         const response = await axios.post(
-          "http://manuel.discountbookcrawlers.com/api/message",
+          "https://manuel.discountbookcrawlers.com/api/message",
           this.form
         );
         this.data = response.data;
