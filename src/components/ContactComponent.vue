@@ -112,6 +112,7 @@ export default {
   font-weight: 100;
   font-style: italic;
   font-size: 1rem;
+  color: var(--border-color);
 }
 .contact-heading h2 {
   font-size: 2.3rem;

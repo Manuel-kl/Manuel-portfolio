@@ -1,8 +1,24 @@
 <template >
-  <div>
-    <router-view id="app" />
+  <div id="app">
+    <transition name="slide-fade">
+      <router-view />
+    </transition>
   </div>
 </template>
+<script>
+export default {
+  methods: {},
+  watch: {},
+  data() {
+    return {
+      loading: false,
+    };
+  },
+  props: {},
+  created() {},
+  setup() {},
+};
+</script>
 
 <style>
 :root {
@@ -43,5 +59,18 @@
 #app {
   height: 100vh;
   background-color: var(--background-color);
+}
+.slide-fade-enter-active {
+  transition: all 0.5s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.1s ease-in;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(20px);
+  opacity: 1;
 }
 </style>

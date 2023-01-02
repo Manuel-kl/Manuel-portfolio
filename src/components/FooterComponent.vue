@@ -110,8 +110,8 @@ h4,
     word-spacing: 0.3rem;
   }
   .footer .greetings-sm h4 {
-    color: var(--font-color-muted);
-    font-weight: 100;
+    color: var(--navbar-color);
+    font-weight: 600;
     font-size: 1rem;
   }
   .footer {
