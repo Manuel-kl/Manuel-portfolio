@@ -46,8 +46,6 @@ const router = createRouter({
                 return { top: 0 }
             }
         },
-
-
     })
     // ...
 
@@ -57,6 +55,9 @@ router.beforeResolve((to, from, next) => {
         // Start the route progress bar.
         NProgress.start()
     }
+    // Track a pageview in Matomo
+    window._paq.push(['setCustomUrl', to.fullPath]);
+    window._paq.push(['trackPageView']);
     next()
 })
 
