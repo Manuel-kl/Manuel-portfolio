@@ -145,24 +145,26 @@ export default {
 </script>
 <style lang='css' scoped>
 .response {
-  color: rgb(5, 255, 80);
+  color: #155724;
+  background-color: #d4edda;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid var(--star);
+  border-radius: 0.25rem;
   font-size: 1.5rem;
   width: fit-content;
   margin: auto;
-  padding: 1rem;
-  border-radius: 15px;
   text-align: center;
-  background-color: var(--border-color);
 }
 .response-error {
-  color: rgb(236, 53, 53);
+  color: #721c24;
   font-size: 1.5rem;
   width: fit-content;
   margin: auto;
-  padding: 1rem;
-  border-radius: 15px;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid var(--star);
+  border-radius: 0.25rem;
   text-align: center;
-  background-color: var(--border-color);
+  background-color: #f8d7da;
 }
 .contact-page {
   display: flex;
