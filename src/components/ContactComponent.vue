@@ -85,7 +85,8 @@
             </div>
           </form>
           <div>
-            <p class="response" v-if="message">{{ message }}</p>
+            <p class="response">Message send successfully</p>
+            <p class="response" v-if="message">Message send successfully</p>
             <p class="response-error" v-else-if="error">
               Failed to send, please try again
             </p>
@@ -150,7 +151,8 @@ export default {
   padding: 0.75rem 1.25rem;
   border: 1px solid var(--star);
   border-radius: 0.25rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-family: var(--font-family-base);
   width: fit-content;
   margin: auto;
   text-align: center;
@@ -159,6 +161,7 @@ export default {
   color: #721c24;
   font-size: 1.5rem;
   width: fit-content;
+  font-family: var(--font-family-base);
   margin: auto;
   padding: 0.75rem 1.25rem;
   border: 1px solid var(--star);
