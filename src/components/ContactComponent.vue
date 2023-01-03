@@ -123,7 +123,7 @@ export default {
       this.loading = true;
       try {
         const response = await axios.post(
-          "https://manuel.discountbookcrawlers.com/api/message",
+          "http://manuel.discountbookcrawlers.com/api/message",
           this.form
         );
         this.data = response.data;
