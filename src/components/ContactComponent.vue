@@ -85,8 +85,7 @@
             </div>
           </form>
           <div>
-            <p class="response">Message send successfully</p>
-            <p class="response" v-if="message">Message send successfully</p>
+            <p class="response" v-if="message">{{ message }}</p>
             <p class="response-error" v-else-if="error">
               Failed to send, please try again
             </p>
