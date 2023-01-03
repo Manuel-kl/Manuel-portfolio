@@ -86,7 +86,9 @@
           </form>
           <div>
             <p class="response" v-if="message">{{ message }}</p>
-            <p class="response-error" v-if="error">{{ error }}</p>
+            <p class="response-error" v-else-if="error">
+              Failed to send, please try again
+            </p>
           </div>
         </div>
       </div>
