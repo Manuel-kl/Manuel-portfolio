@@ -404,7 +404,13 @@ export default {
   },
   created() {},
   methods: {},
-  mounted() {},
+  mounted() {
+    // Add an event listener to track scrolling
+    window.addEventListener("scroll", function () {
+      // Track a scroll event in Matomo
+      window._paq.push(["trackEvent", "Window", "Scroll"]);
+    });
+  },
 };
 </script>
 <style lang='css' scoped>
