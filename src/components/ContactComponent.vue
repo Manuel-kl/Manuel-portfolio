@@ -16,26 +16,40 @@
               <a
                 href="https://wa.me/+254743520021/?text=Hello%20Emmanuel..."
                 target="_blank"
+                id="my-button"
                 ><img src="../assets/whatsapp.png" alt="whatsapp" />Whatsapp</a
               >
             </div>
             <div class="contact-link">
-              <a href="https://twitter.com/Manuelkl_" target="_blank"
+              <a
+                href="https://twitter.com/Manuelkl_"
+                target="_blank"
+                id="my-button"
                 ><img src="../assets/twitter.png" alt="twitter" />Twitter</a
               >
             </div>
             <div class="contact-link">
-              <a href="https://www.instagram.com/manuel_k_l_/" target="_blank">
+              <a
+                href="https://www.instagram.com/manuel_k_l_/"
+                target="_blank"
+                id="my-button"
+              >
                 <img src="../assets/instagram.png" alt="instagram" />Instagram
               </a>
             </div>
             <div class="contact-link">
-              <a href="mailto:mannuehkipkirui@gmail.com" target="_blank"
+              <a
+                href="mailto:mannuehkipkirui@gmail.com"
+                target="_blank"
+                id="my-button"
                 ><img src="../assets/mail.png" alt="mail" />Email</a
               >
             </div>
             <div class="contact-link">
-              <a href="https://linkedin.com/in/elangat" target="_blank"
+              <a
+                href="https://linkedin.com/in/elangat"
+                target="_blank"
+                id="my-button"
                 ><img src="../assets/linkedin.png" alt="linkedin" />LinkedIn</a
               >
             </div>
@@ -124,13 +138,18 @@ export default {
       // Track a scroll event in Matomo
       window._paq.push(["trackEvent", "Window", "Scroll"]);
     });
+    // Add an event listener to track clicks on the button
+    document.getElementById("my-button").addEventListener("click", function () {
+      // Track a click event in Matomo
+      window._paq.push(["trackEvent", "Button", "Click"]);
+    });
   },
   methods: {
     async post() {
       this.loading = true;
       try {
         const response = await axios.post(
-          "https://manuel.discountbookcrawlers.com/api/message",
+          "https://formspree.io/f/xknaraad",
           this.form
         );
         this.data = response.data;

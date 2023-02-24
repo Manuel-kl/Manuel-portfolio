@@ -14,24 +14,31 @@
         </p>
       </div>
       <div class="contact-links">
-        <a href="https://github.com/Manuel-kl" target="_blank"
+        <a href="https://github.com/Manuel-kl" target="_blank" id="my-button"
           ><font-awesome-icon icon="fa-brands fa-github" class="fa-icon"
         /></a>
-        <a href="https://linkedin.com/in/elangat" target="_blank"
+        <a href="https://linkedin.com/in/elangat" target="_blank" id="my-button"
           ><font-awesome-icon icon="fa-brands fa-linkedin" class="fa-icon"
         /></a>
-        <a href="mailto:mannuehkipkirui@gmail.com" target="_blank"
+        <a
+          href="mailto:mannuehkipkirui@gmail.com"
+          target="_blank"
+          id="my-button"
           ><font-awesome-icon icon="fa-regular fa-envelope" class="fa-icon"
         /></a>
-        <a href="https://twitter.com/Manuelkl_" target="_blank"
+        <a href="https://twitter.com/Manuelkl_" target="_blank" id="my-button"
           ><font-awesome-icon icon="fa-brands fa-twitter" class="fa-icon"
         /></a>
         <a
           href="https://wa.me/+254743520021/?text=Hello%20Emmanuel..."
           target="_blank"
+          id="my-button"
           ><font-awesome-icon icon="fa-brands fa-whatsapp" class="fa-icon"
         /></a>
-        <a href="https://www.instagram.com/manuel_k_l_/" target="_blank"
+        <a
+          href="https://www.instagram.com/manuel_k_l_/"
+          target="_blank"
+          id="my-button"
           ><font-awesome-icon icon="fa-brands fa-instagram" class="fa-icon"
         /></a>
       </div>
